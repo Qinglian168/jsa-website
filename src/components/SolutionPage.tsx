@@ -90,12 +90,12 @@ export function SolutionPage({ title, icon, description, color, challenges, appr
       </section>
 
       {/* Benefits */}
-      <section className="py-16 lg:py-20 bg-primary-light">
+      <section className="py-16 lg:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">Why JSA Solution?</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {benefits.map((b, i) => (
-              <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-xl border border-blue-100 shadow-sm">
+              <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-xl border border-border shadow-sm">
                 <svg className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                 <span className="text-sm text-dark">{b}</span>
               </div>

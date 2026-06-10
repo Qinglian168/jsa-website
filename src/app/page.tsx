@@ -206,7 +206,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-3">
             {stats.map((stat) => (
-              <div key={stat.label} className="bg-primary-light border border-blue-100 rounded-xl p-4 text-center">
+              <div key={stat.label} className="bg-slate-50 border border-border rounded-xl p-4 text-center">
                 <div className="text-2xl font-extrabold text-gradient">{stat.value}</div>
                 <div className="text-xs text-gray mt-1">{stat.label}</div>
               </div>
@@ -331,7 +331,7 @@ export default function HomePage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyUs.map((item, i) => (
-              <div key={i} className="bg-primary-light/50 border border-blue-100 rounded-2xl p-6 hover:bg-primary-light hover:border-primary/30 transition-all">
+              <div key={i} className="bg-slate-50 border border-border rounded-2xl p-6 hover:border-primary/30 hover:shadow-md transition-all">
                 <div className="text-3xl mb-3">{item.icon}</div>
                 <h3 className="text-lg font-bold text-dark mb-2">{item.title}</h3>
                 <p className="text-sm text-gray leading-relaxed">{item.desc}</p>

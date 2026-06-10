@@ -84,7 +84,7 @@ export function CategoryPage({ title, subtitle, description, icon, brands, produ
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product) => (
               <div key={product.name} className="card-tech rounded-2xl p-6">
-                <div className="text-xs font-semibold text-primary bg-primary-light border border-blue-100 px-2 py-1 rounded inline-block mb-3">
+                <div className="text-xs font-semibold text-primary bg-slate-50 border border-border px-2 py-1 rounded inline-block mb-3">
                   {product.series}
                 </div>
                 <h3 className="text-lg font-bold text-dark mb-2">{product.name}</h3>

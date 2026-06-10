@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const productCategories = [
@@ -44,20 +45,19 @@ export default function Header() {
   const [activeMega, setActiveMega] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-border shadow-sm">
+    <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="relative w-10 h-10 lg:w-12 lg:h-12 rounded-lg flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary to-cyan shadow-md">
-              <span className="font-extrabold text-sm lg:text-base tracking-tight text-white">
-                JS<span className="text-accent">A</span>
-              </span>
-            </div>
-            <div className="ml-2 lg:ml-3">
-              <div className="text-lg lg:text-xl font-bold text-dark leading-tight">JSA Solution</div>
-              <div className="text-[10px] lg:text-xs text-gray hidden sm:block leading-tight">Shenzhen Jiesian Technology Co., Ltd.</div>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="JSA Solution"
+              width={120}
+              height={40}
+              className="h-8 lg:h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

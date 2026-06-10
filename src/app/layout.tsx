@@ -87,7 +87,7 @@ export default function RootLayout({
               name: "Shenzhen Jiesian Technology Co., Ltd.",
               alternateName: "JSA Solution",
               url: "https://jsasolution.com",
-              logo: "https://jsasolution.com/images/logo.png",
+              logo: "https://jsasolution.com/logo.png",
               description:
                 "Professional network equipment distributor with 20 years of experience, authorized partner of 35+ brands.",
               address: {
