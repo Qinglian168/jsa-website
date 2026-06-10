@@ -33,7 +33,7 @@ export function SolutionPage({ title, icon, description, color, challenges, appr
       </section>
 
       {/* Challenges */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">Common Challenges</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -53,8 +53,8 @@ export function SolutionPage({ title, icon, description, color, challenges, appr
           <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">Our Approach</h2>
           <div className="space-y-6">
             {approach.map((step, i) => (
-              <div key={i} className="flex items-start gap-5 bg-white p-6 rounded-2xl border border-border">
-                <div className="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold shrink-0">
+              <div key={i} className="flex items-start gap-5 bg-white p-6 rounded-2xl border border-border shadow-sm">
+                <div className="w-10 h-10 bg-gradient-to-br from-primary to-cyan text-white rounded-full flex items-center justify-center font-bold shrink-0">
                   {i + 1}
                 </div>
                 <div>
@@ -68,12 +68,12 @@ export function SolutionPage({ title, icon, description, color, challenges, appr
       </section>
 
       {/* Recommended Products */}
-      <section className="py-16 lg:py-20">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">Recommended Products</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((p) => (
-              <div key={p.category} className="bg-white border border-border rounded-xl p-5">
+              <div key={p.category} className="bg-light border border-border rounded-xl p-5">
                 <h3 className="font-bold text-dark mb-3">{p.category}</h3>
                 <ul className="space-y-1.5">
                   {p.items.map((item) => (
@@ -95,8 +95,8 @@ export function SolutionPage({ title, icon, description, color, challenges, appr
           <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">Why JSA Solution?</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {benefits.map((b, i) => (
-              <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-xl border border-blue-100">
-                <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+              <div key={i} className="flex items-start gap-3 p-4 bg-white rounded-xl border border-blue-100 shadow-sm">
+                <svg className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                 <span className="text-sm text-dark">{b}</span>
               </div>
             ))}
@@ -105,11 +105,11 @@ export function SolutionPage({ title, icon, description, color, challenges, appr
       </section>
 
       {/* CTA */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-gradient-to-br from-primary via-primary-dark to-deepblue text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-extrabold text-dark mb-3">Ready to Build Your {title}?</h2>
-          <p className="text-gray mb-6">Get a free consultation and customized solution proposal from our expert team.</p>
-          <Link href="/contact" className="inline-flex items-center px-7 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary-dark transition-colors shadow-md text-sm">
+          <h2 className="text-2xl font-extrabold mb-3">Ready to Build Your {title}?</h2>
+          <p className="text-white/70 mb-6">Get a free consultation and customized solution proposal from our expert team.</p>
+          <Link href="/contact" className="inline-flex items-center px-7 py-3 bg-white text-primary font-bold rounded-lg hover:bg-white/90 transition-all shadow-md text-sm">
             Get Free Consultation
           </Link>
         </div>

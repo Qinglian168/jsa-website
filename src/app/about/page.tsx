@@ -43,7 +43,8 @@ export default function AboutPage() {
             foundingDate: "2006",
             address: {
               "@type": "PostalAddress",
-              addressLocality: "Shenzhen",
+              streetAddress: "Floor 6, Bldg. B, Bantian International Center, No. 5, South Huancheng Road, Bantian Street",
+              addressLocality: "Longgang District, Shenzhen",
               addressRegion: "Guangdong",
               addressCountry: "CN",
             },

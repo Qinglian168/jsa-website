@@ -42,7 +42,7 @@ export function CategoryPage({ title, subtitle, description, icon, brands, produ
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      {/* Hero with Banner Image */}
+      {/* Hero with Banner Image - Blue overlay */}
       <section className="relative py-16 lg:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
@@ -52,25 +52,25 @@ export function CategoryPage({ title, subtitle, description, icon, brands, produ
             className="object-cover"
           />
         </div>
-        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(7,11,30,0.9), rgba(10,14,39,0.85))"}} />
-        <div className="absolute inset-0 bg-grid opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary-dark/85 to-cyan/75" />
+        <div className="absolute inset-0 dot-pattern opacity-10" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <nav className="text-sm text-white/40 mb-4">
-            <Link href="/" className="hover:text-cyan">Home</Link>
+          <nav className="text-sm text-white/60 mb-4">
+            <Link href="/" className="hover:text-white">Home</Link>
             <span className="mx-2">/</span>
-            <Link href="/products" className="hover:text-cyan">Products</Link>
+            <Link href="/products" className="hover:text-white">Products</Link>
             <span className="mx-2">/</span>
-            <span className="text-cyan">{title}</span>
+            <span className="text-white">{title}</span>
           </nav>
           <div className="flex items-center gap-4 mb-4">
             <span className="text-4xl">{icon}</span>
             <h1 className="text-3xl lg:text-5xl font-extrabold text-white">{title}</h1>
           </div>
-          <p className="text-lg text-white/60 max-w-3xl">{description}</p>
+          <p className="text-lg text-white/80 max-w-3xl">{description}</p>
           <div className="flex flex-wrap gap-2 mt-6">
             {brands.map((brand) => (
-              <span key={brand} className="text-sm bg-cyan/10 border border-cyan/20 backdrop-blur-sm px-3 py-1 rounded-full text-cyan/80">{brand}</span>
+              <span key={brand} className="text-sm bg-white/15 border border-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-white/80">{brand}</span>
             ))}
           </div>
         </div>
@@ -80,24 +80,24 @@ export function CategoryPage({ title, subtitle, description, icon, brands, produ
       <section className="py-16 lg:py-20 bg-light bg-grid">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-line mb-4" />
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-8">Product Series</h2>
+          <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">Product Series</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product) => (
               <div key={product.name} className="card-tech rounded-2xl p-6">
-                <div className="text-xs font-semibold text-cyan bg-cyan/10 border border-cyan/20 px-2 py-1 rounded inline-block mb-3">
+                <div className="text-xs font-semibold text-primary bg-primary-light border border-blue-100 px-2 py-1 rounded inline-block mb-3">
                   {product.series}
                 </div>
-                <h3 className="text-lg font-bold text-white mb-2">{product.name}</h3>
+                <h3 className="text-lg font-bold text-dark mb-2">{product.name}</h3>
                 <p className="text-sm text-gray mb-4 leading-relaxed">{product.desc}</p>
                 <ul className="space-y-1.5">
                   {product.features.map((f) => (
                     <li key={f} className="text-sm text-gray flex items-start gap-2">
-                      <svg className="w-4 h-4 text-cyan shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
+                      <svg className="w-4 h-4 text-primary shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
                       {f}
                     </li>
                   ))}
                 </ul>
-                <Link href="/contact" className="inline-flex items-center mt-4 text-sm font-semibold text-cyan hover:underline">
+                <Link href="/contact" className="inline-flex items-center mt-4 text-sm font-semibold text-primary hover:underline">
                   Get Quote
                   <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                 </Link>
@@ -108,14 +108,14 @@ export function CategoryPage({ title, subtitle, description, icon, brands, produ
       </section>
 
       {/* FAQ */}
-      <section className="py-16 lg:py-20 bg-primary-dark">
+      <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-line mb-4" />
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-white mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <details key={i} className="bg-surface border border-border rounded-xl p-5 group">
-                <summary className="font-semibold text-white cursor-pointer list-none flex items-center justify-between">
+              <details key={i} className="bg-light border border-border rounded-xl p-5 group">
+                <summary className="font-semibold text-dark cursor-pointer list-none flex items-center justify-between">
                   {faq.q}
                   <svg className="w-5 h-5 text-gray group-open:rotate-180 transition-transform shrink-0 ml-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                 </summary>
@@ -127,11 +127,11 @@ export function CategoryPage({ title, subtitle, description, icon, brands, produ
       </section>
 
       {/* CTA */}
-      <section className="py-12 bg-light">
+      <section className="py-12 bg-gradient-to-br from-primary via-primary-dark to-deepblue text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-extrabold text-white mb-3">Need Help Choosing the Right {title}?</h2>
-          <p className="text-gray mb-6">Our team of experts can recommend the best products for your specific requirements.</p>
-          <Link href="/contact" className="inline-flex items-center px-7 py-3 btn-neon rounded-lg text-sm">
+          <h2 className="text-2xl font-extrabold mb-3">Need Help Choosing the Right {title}?</h2>
+          <p className="text-white/70 mb-6">Our team of experts can recommend the best products for your specific requirements.</p>
+          <Link href="/contact" className="inline-flex items-center px-7 py-3 bg-white text-primary font-bold rounded-lg hover:bg-white/90 transition-all shadow-md text-sm">
             Contact Our Experts
           </Link>
         </div>
