@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://jsasolution.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/router</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/switch</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/wireless-ap</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/conference</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/ai-server</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/solutions</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/solutions/enterprise-networking</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/solutions/campus-wireless</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/solutions/smart-meeting</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/solutions/ai-computing</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/brands</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/about</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/faq</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/contact</loc><priority>0.6</priority><changefreq>yearly</changefreq></url>
+</urlset>
