@@ -5,21 +5,12 @@ import Image from "next/image";
 import { useState } from "react";
 
 const productCategories = [
-  { href: "/products/router", label: "Routers" },
-  { href: "/products/switch", label: "Switches" },
-  { href: "/products/firewall", label: "Firewalls" },
-  { href: "/products/wireless-ap", label: "Wireless" },
+  { href: "/products/networking", label: "Networking" },
   { href: "/products/ai-workstation", label: "AI Workstation" },
-  { href: "/products/unified-communications", label: "Unified Comms" },
-  { href: "/products/network-management", label: "Network Mgmt" },
-  { href: "/products/networking-accessories", label: "Accessories" },
-  { href: "/products/ai-server", label: "Servers" },
-  { href: "/products/storage", label: "Storages" },
-  { href: "/products/optical-access", label: "Optical Access" },
-  { href: "/products/optical-transmission", label: "Optical Trans." },
-  { href: "/products/video-surveillance", label: "Video Surveil." },
-  { href: "/products/cyber-security", label: "Cyber Security" },
-  { href: "/products/data-protection", label: "Data Protection" },
+  { href: "/products/smart-conference", label: "Smart Conference Devices" },
+  { href: "/products/optical-transceivers", label: "Optical Transceivers" },
+  { href: "/products/fiber-optic-cables", label: "Fiber Optic Cables" },
+  { href: "/products/testers-tools", label: "Testers & Tools" },
 ];
 
 const solutionCategories = [
