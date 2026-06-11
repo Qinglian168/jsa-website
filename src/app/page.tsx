@@ -3,9 +3,9 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSA Solution - Professional Network Equipment Distributor in Shenzhen, China",
+  title: "JSA Solution - ICT & Smart Office Equipment Provider | 20 Years Export Experience",
   description:
-    "JSA Solution (Shenzhen Jiesian Technology Co., Ltd.) is a leading network equipment distributor with 20 years of experience. Authorized partner of Cisco, Huawei, H3C, Juniper, Aruba and 35+ global brands. Import & export licensed.",
+    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment. Authorized partner of Cisco, Huawei, H3C, 35+ global brands. 20 years export experience.",
   alternates: { canonical: "/" },
 };
 
@@ -155,8 +155,7 @@ export default function HomePage() {
                 <br />Distributor
               </h1>
               <p className="text-lg text-white/80 mb-8 max-w-lg leading-relaxed">
-                Authorized partner of Cisco, Huawei, H3C, Juniper, and 35+ global brands.
-                From routers and switches to AI computing servers — one-stop procurement with import/export license.
+                Your trusted partner for network communication equipment, wireless systems, AI computing servers, and smart conference solutions. 20 years export experience, 35+ authorized brands, one-stop service.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link

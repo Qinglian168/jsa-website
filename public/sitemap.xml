@@ -3,6 +3,14 @@
   <url><loc>https://jsasolution.com/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://jsasolution.com/products</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://jsasolution.com/products/networking</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/switches</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/routers</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/firewalls</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/video-surveillance</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/unified-communications</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/servers-storages</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/wireless</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://jsasolution.com/products/networking/ups-kvm</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://jsasolution.com/products/ai-workstation</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://jsasolution.com/products/smart-conference</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://jsasolution.com/products/optical-transceivers</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>

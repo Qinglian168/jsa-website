@@ -5,7 +5,20 @@ import Image from "next/image";
 import { useState } from "react";
 
 const productCategories = [
-  { href: "/products/networking", label: "Networking" },
+  {
+    href: "/products/networking",
+    label: "Networking",
+    children: [
+      { href: "/products/networking/switches", label: "Switches" },
+      { href: "/products/networking/routers", label: "Routers" },
+      { href: "/products/networking/firewalls", label: "Firewalls" },
+      { href: "/products/networking/video-surveillance", label: "Video Surveillance" },
+      { href: "/products/networking/unified-communications", label: "Unified Communications" },
+      { href: "/products/networking/servers-storages", label: "Servers & Storages" },
+      { href: "/products/networking/wireless", label: "Wireless" },
+      { href: "/products/networking/ups-kvm", label: "UPS & KVM" },
+    ],
+  },
   { href: "/products/ai-workstation", label: "AI Workstation" },
   { href: "/products/smart-conference", label: "Smart Conference Devices" },
   { href: "/products/optical-transceivers", label: "Optical Transceivers" },
@@ -69,18 +82,63 @@ export default function Header() {
                     </svg>
                   </Link>
                   {activeMega === item.label && (
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 bg-white border border-border rounded-xl shadow-xl py-4 px-2 z-50 w-[520px]">
-                      <div className="grid grid-cols-2 gap-1">
-                        {item.items?.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            className="flex items-center px-3 py-2 text-sm text-gray hover:text-primary hover:bg-primary-light/50 rounded-lg transition-colors"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
-                      </div>
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 bg-white border border-border rounded-xl shadow-xl z-50 py-3 px-2" style={{ minWidth: item.label === "Products" ? "620px" : "520px" }}>
+                      {item.label === "Products" ? (
+                        /* Products mega menu: show Networking group + other categories */
+                        <div className="flex gap-6">
+                          {/* Left: Networking group with children */}
+                          <div className="min-w-[260px]">
+                            {item.items?.map((cat) =>
+                              'children' in cat ? (
+                                <div key={cat.href}>
+                                  <Link
+                                    href={cat.href}
+                                    className="block px-3 py-1.5 text-sm font-bold text-dark hover:text-primary"
+                                  >
+                                    {cat.label}
+                                  </Link>
+                                  {('children' in cat) && (cat as {children: {href: string; label: string}[]}).children.map((child) => (
+                                    <Link
+                                      key={child.href}
+                                      href={child.href}
+                                      className="block pl-5 pr-3 py-1 text-xs text-gray-600 hover:text-primary hover:bg-primary-light/50 rounded-md transition-colors"
+                                    >
+                                      {child.label}
+                                    </Link>
+                                  ))}
+                                </div>
+                              ) : null
+                            )}
+                          </div>
+                          {/* Right: Other categories */}
+                          <div className="border-l border-border pl-4 flex flex-col gap-1">
+                            {item.items?.map((cat) =>
+                              !('children' in cat) ? (
+                                <Link
+                                  key={cat.href}
+                                  href={cat.href}
+                                  className="whitespace-nowrap px-3 py-2 text-sm text-gray hover:text-primary hover:bg-primary-light/50 rounded-lg transition-colors"
+                                >
+                                  {cat.label}
+                                </Link>
+                              ) : null
+                            )}
+                          </div>
+                        </div>
+                      ) : (
+                        /* Default mega menu: 2-column grid */
+                        <div className="grid grid-cols-2 gap-1">
+                          {item.items?.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className="flex items-center px-3 py-2 text-sm text-gray hover:text-primary hover:bg-primary-light/50 rounded-lg transition-colors"
+                            >
+                              {child.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   )}
                 </div>
@@ -128,11 +186,22 @@ export default function Header() {
         <div className="lg:hidden bg-white border-t border-border shadow-xl max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-3 space-y-1">
             <div className="px-3 py-2 text-sm font-semibold text-primary/60 uppercase tracking-wider">Products</div>
-            {productCategories.map((child) => (
-              <Link key={child.href} href={child.href} className="block pl-6 pr-3 py-1.5 text-sm text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>
-                {child.label}
-              </Link>
-            ))}
+            {productCategories.map((cat) =>
+              'children' in cat ? (
+                <div key={cat.href}>
+                  <div className="px-3 py-1.5 text-sm font-semibold text-dark">{cat.label}</div>
+                  {(cat as {children: {href: string; label: string}[]}).children.map((child) => (
+                    <Link key={child.href} href={child.href} className="block pl-8 pr-3 py-1 text-xs text-gray-600 hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <Link key={cat.href} href={cat.href} className="block px-3 py-1.5 text-sm text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>
+                  {cat.label}
+                </Link>
+              )
+            )}
 
             <div className="px-3 py-2 text-sm font-semibold text-primary/60 uppercase tracking-wider mt-2">Solutions</div>
             {solutionCategories.map((child) => (

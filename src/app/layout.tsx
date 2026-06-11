@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | JSA Solution",
   },
   description:
-    "JSA Solution (Shenzhen Jiesian Technology Co., Ltd.) is a leading network equipment distributor with 20 years of experience. Authorized partner of Cisco, Huawei, H3C, Juniper, Aruba and 35+ brands. Specializing in routers, switches, wireless AP, video conferencing, and AI computing servers.",
+    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment. We supply network communication equipment, wireless systems, AI computing servers, and smart conference solutions from 35+ authorized brands. 20 years export experience.",
   keywords: [
     "network equipment distributor",
     "Cisco distributor",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "JSA Solution",
     title: "JSA Solution - Professional Network Equipment Distributor",
     description:
-      "20 years of experience. 35+ brand partnerships. Your trusted network equipment distributor in Shenzhen, China.",
+      "Comprehensive ICT & smart office equipment provider in China. 20 years export experience, 35+ authorized brand partnerships. Network equipment, AI servers, smart conference solutions.",
   },
   robots: {
     index: true,

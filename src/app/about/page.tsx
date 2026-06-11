@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About JSA Solution - 20 Years of Network Equipment Distribution",
+  title: "About JSA Solution - Comprehensive ICT & Smart Office Equipment Provider",
   description:
-    "Shenzhen Jiesian Technology Co., Ltd. (JSA Solution) — 20 years of network equipment distribution experience, import/export license, 35+ authorized brand partnerships. Based in Shenzhen, China.",
+    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment, with 20 years of export experience serving clients worldwide.",
   alternates: { canonical: "/about" },
 };
 
@@ -72,24 +72,17 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-6">Who We Are</h2>
+              <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-6">About JSA Solution</h2>
               <div className="space-y-4 text-gray leading-relaxed">
                 <p>
-                  <strong className="text-dark">JSA Solution (Shenzhen Jiesian Technology Co., Ltd.)</strong> is a professional
-                  network equipment distributor based in Shenzhen, China. Founded in 2006, we have over{" "}
-                  <strong className="text-primary">20 years of industry experience</strong> serving enterprises,
-                  system integrators, and government organizations.
+                  We are a comprehensive service provider in China specializing in the <strong className="text-dark">communication & information industry</strong> and{" "}
+                  <strong className="text-dark">smart office equipment</strong>. We supply a full range of branded products including network communication equipment, full-coverage wireless systems, enterprise storage servers, AI computing power servers, HD audio & video conference systems and interactive smart conference panels.
                 </p>
                 <p>
-                  We are an <strong className="text-primary">authorized distributor</strong> of 35+ global brands
-                  including Cisco, Huawei, H3C, Juniper, Aruba, NVIDIA, Dell, HPE, and more. Our product portfolio
-                  covers enterprise routers, switches, wireless AP, video conferencing systems, AI computing servers,
-                  and security appliances.
+                  With <strong className="text-primary">20 years of export experience</strong>, we serve clients worldwide. Our business covers government & enterprise informatization, enterprise networking, AI new infrastructure, park weak current engineering and smart office renovation. Supported by China's complete supply chain, we guarantee genuine products, professional solutions and one-stop services.
                 </p>
                 <p>
-                  With our <strong className="text-primary">import and export operating license</strong>, we provide
-                  seamless cross-border procurement services for clients worldwide. Our Shenzhen warehouse ensures
-                  fast dispatch and competitive logistics rates.
+                  We offer <strong className="text-primary">flexible payment terms</strong> and efficient global delivery. With reliable quality, cost performance and full after-sales support, we aim to be your trusted long-term partner for IT hardware procurement.
                 </p>
               </div>
             </div>
