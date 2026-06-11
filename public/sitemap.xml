@@ -14,6 +14,7 @@
   <url><loc>https://jsasolution.com/solutions/ai-computing</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://jsasolution.com/brands</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://jsasolution.com/about</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://jsasolution.com/events-news</loc><priority>0.8</priority><changefreq>daily</changefreq></url>
   <url><loc>https://jsasolution.com/faq</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://jsasolution.com/contact</loc><priority>0.6</priority><changefreq>yearly</changefreq></url>
 </urlset>

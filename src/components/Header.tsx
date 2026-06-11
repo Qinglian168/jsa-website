@@ -32,12 +32,10 @@ const solutionCategories = [
 ];
 
 const mainNav = [
-  { href: "/", label: "Home" },
   { href: "/products", label: "Products", mega: true, items: productCategories },
   { href: "/solutions", label: "Solutions", mega: true, items: solutionCategories },
-  { href: "/brands", label: "Brands" },
-  { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Contact" },
+  { href: "/events-news", label: "Events & News" },
+  { href: "/contact", label: "Contact Us" },
 ];
 
 export default function Header() {
@@ -138,8 +136,6 @@ export default function Header() {
       {mobileOpen && (
         <div className="lg:hidden bg-white border-t border-border shadow-xl max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-3 space-y-1">
-            <Link href="/" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Home</Link>
-
             <div className="px-3 py-2 text-sm font-semibold text-primary/60 uppercase tracking-wider">Products</div>
             {productCategories.map((child) => (
               <Link key={child.href} href={child.href} className="block pl-6 pr-3 py-1.5 text-sm text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>
@@ -155,9 +151,10 @@ export default function Header() {
             ))}
 
             <div className="border-t border-border mt-2 pt-2">
+              <Link href="/events-news" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Events & News</Link>
               <Link href="/brands" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Brands</Link>
               <Link href="/about" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>About Us</Link>
-              <Link href="/contact" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Contact</Link>
+              <Link href="/contact" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Contact Us</Link>
             </div>
 
             <Link href="/contact" className="block mt-3 text-center px-5 py-2.5 btn-primary text-sm font-semibold rounded-lg" onClick={() => setMobileOpen(false)}>

@@ -91,6 +91,8 @@ export default function Footer() {
             <h3 className="text-sm font-semibold uppercase tracking-wider text-primary mt-6 mb-4">Company</h3>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-sm text-gray hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="/brands" className="text-sm text-gray hover:text-primary transition-colors">Brands</Link></li>
+              <li><Link href="/events-news" className="text-sm text-gray hover:text-primary transition-colors">Events & News</Link></li>
               <li><Link href="/faq" className="text-sm text-gray hover:text-primary transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="text-sm text-gray hover:text-primary transition-colors">Contact</Link></li>
             </ul>
