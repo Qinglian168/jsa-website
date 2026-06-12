@@ -8,7 +8,12 @@ export const metadata: Metadata = {
 
 const newsItems = [
   {
-    date: "June 10, 2026",
+    date: "June 12, 2026",
+    title: "AI-Ready Enterprise Networking in 2026: Cisco, Fortinet, and Huawei Lead the Infrastructure Revolution",
+    excerpt: "From Cisco's 102.4 Tbps Silicon One G300 and Fortinet's AI-native FortiGate G Series to Huawei's Wi-Fi 7 breakthroughs — discover the technologies reshaping enterprise networking and how to prepare your infrastructure for AI workloads.",
+    slug: "ai-ready-enterprise-networking-2026",
+  },
+  {    date: "June 10, 2026",
     title: "JSA Solution Expands AI Computing Server Portfolio with NVIDIA H200 Support",
     excerpt: "We are excited to announce the addition of NVIDIA H200 GPU-powered servers to our AI computing lineup, enabling faster LLM training and inference for enterprise customers.",
     slug: "jsa-expands-ai-computing-portfolio",
