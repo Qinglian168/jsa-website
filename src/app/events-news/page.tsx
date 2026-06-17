@@ -13,23 +13,6 @@ const newsItems = [
     excerpt: "From Cisco's 102.4 Tbps Silicon One G300 and Fortinet's AI-native FortiGate G Series to Huawei's Wi-Fi 7 breakthroughs — discover the technologies reshaping enterprise networking and how to prepare your infrastructure for AI workloads.",
     slug: "ai-ready-enterprise-networking-2026",
   },
-  {    date: "June 10, 2026",
-    title: "JSA Solution Expands AI Computing Server Portfolio with NVIDIA H200 Support",
-    excerpt: "We are excited to announce the addition of NVIDIA H200 GPU-powered servers to our AI computing lineup, enabling faster LLM training and inference for enterprise customers.",
-    slug: "jsa-expands-ai-computing-portfolio",
-  },
-  {
-    date: "May 28, 2026",
-    title: "New Partnership: JSA Becomes Authorized Distributor for Fortinet Security Solutions",
-    excerpt: "JSA Solution has signed a distribution agreement with Fortinet, expanding our cybersecurity offerings to include next-generation firewalls, SD-WAN, and endpoint protection.",
-    slug: "jsa-fortinet-partnership",
-  },
-  {
-    date: "May 15, 2026",
-    title: "Wi-Fi 7 Ready: Introducing the Latest Enterprise Wireless AP Solutions",
-    excerpt: "Get ready for the next generation of wireless connectivity. We now offer Wi-Fi 7 access points from leading brands including Cisco, H3C, and Ruckus.",
-    slug: "wifi-7-enterprise-wireless-solutions",
-  },
 ];
 
 export default function EventsNewsPage() {
