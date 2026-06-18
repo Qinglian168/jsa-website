@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const milestones = [
-  { year: "2006", event: "Company founded in Shenzhen, China" },
+  { year: "2010", event: "Company founded in Shenzhen, China" },
   { year: "2009", event: "Obtained import & export operating license" },
   { year: "2012", event: "Became authorized Cisco and Huawei partner" },
   { year: "2015", event: "Expanded to 35+ brand partnerships" },
@@ -64,7 +65,7 @@ export default function AboutPage() {
           </nav>
           <h1 className="text-3xl lg:text-5xl font-extrabold mb-4">About JSA Solution</h1>
           <p className="text-lg text-white/80 max-w-2xl">
-            Shenzhen Jiesian Technology Co., Ltd. — Your trusted network equipment distributor since 2006.
+            Shenzhen Jiesian Technology Co., Ltd. — Your trusted network communication equipment distributor since 2010.
           </p>
         </div>
       </section>
@@ -135,13 +136,23 @@ export default function AboutPage() {
       <section className="py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8 text-center">Certifications & Qualifications</h2>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 mb-10">
             {certifications.map((cert) => (
               <div key={cert} className="flex items-center gap-2 bg-white border border-border rounded-xl px-5 py-3">
                 <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                 <span className="text-sm font-semibold text-dark">{cert}</span>
               </div>
             ))}
+          </div>
+          <div className="flex justify-center">
+            <Image
+              src="/jsa-poster.png"
+              alt="JSA Solution - Your Trusted Partner for IT Hardware Procurement"
+              width={1024}
+              height={1024}
+              className="rounded-2xl shadow-lg max-w-full h-auto"
+              priority
+            />
           </div>
         </div>
       </section>
