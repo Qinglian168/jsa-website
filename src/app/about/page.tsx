@@ -111,46 +111,16 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-16 lg:py-20 bg-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-10 text-center">Our Journey</h2>
-          <div className="space-y-0">
-            {milestones.map((m, i) => (
-              <div key={m.year} className="flex items-start gap-5">
-                <div className="flex flex-col items-center">
-                  <div className="w-4 h-4 bg-primary rounded-full shrink-0 border-4 border-primary-light" />
-                  {i < milestones.length - 1 && <div className="w-0.5 h-12 bg-primary/20" />}
-                </div>
-                <div className="pb-8">
-                  <div className="text-sm font-bold text-primary">{m.year}</div>
-                  <div className="text-dark">{m.event}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
+      {/* Company Poster */}
       <section className="py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8 text-center">Certifications & Qualifications</h2>
-          <div className="flex flex-wrap justify-center gap-4 mb-10">
-            {certifications.map((cert) => (
-              <div key={cert} className="flex items-center gap-2 bg-white border border-border rounded-xl px-5 py-3">
-                <svg className="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                <span className="text-sm font-semibold text-dark">{cert}</span>
-              </div>
-            ))}
-          </div>
           <div className="flex justify-center">
             <Image
               src="/jsa-poster.png"
-              alt="JSA Solution - Your Trusted Partner for IT Hardware Procurement"
-              width={1024}
-              height={1024}
-              className="rounded-2xl shadow-lg max-w-full h-auto"
+              alt="JSA Solution - Professional IT Hardware & Solutions for Communication, Information Industry and Smart Office"
+              width={1400}
+              height={933}
+              className="rounded-2xl shadow-xl w-full h-auto"
               priority
             />
           </div>
