@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/16x4qbvl666kz.css","style"]
+:HL["/_next/static/chunks/2wzqqvnjvbnho.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap","style"]
 :HL["https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"networking","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"3CCSHl3_z-XxuE8Ot6WTR"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"networking","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"ibeRIGYPhDRvgd9t1X3Bs"}
