@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Authorized Brand Partners - 35+ Global Network Equipment Brands",
+  title: "Authorized Brand Partners - 50+ Global Network Equipment Brands",
   description:
-    "JSA Solution is an authorized distributor of 35+ global network equipment brands: Cisco, Huawei, H3C, Juniper, Aruba, Ruckus, NVIDIA, Dell, HPE, Yealink, Poly, and more.",
+    "JSA Solution is an authorized distributor of 50+ global network equipment brands: Cisco, Huawei, H3C, Juniper, Aruba, Ruckus, NVIDIA, Dell, HPE, Yealink, Poly, and more.",
   alternates: { canonical: "/brands" },
 };
 
@@ -94,7 +94,7 @@ export default function BrandsPage() {
           </nav>
           <h1 className="text-3xl lg:text-5xl font-extrabold mb-4">Authorized Brand Partners</h1>
           <p className="text-lg text-white/80 max-w-2xl">
-            Direct partnerships with 35+ global brands ensure authentic products, competitive pricing, and full warranty support.
+            Direct partnerships with 50+ global brands ensure authentic products, competitive pricing, and full warranty support.
           </p>
         </div>
       </section>

@@ -4,7 +4,7 @@ import { CategoryPage } from "@/components/CategoryPage";
 export const metadata: Metadata = {
   title: "Enterprise Routers - Cisco, Huawei, H3C, Juniper Authorized Distributor",
   description:
-    "Shop enterprise routers from Cisco, Huawei, H3C, Juniper, and more. VPN routers, SD-WAN, edge routers — authorized distributor with 20 years of experience in Shenzhen, China.",
+    "Shop enterprise routers from Cisco, Huawei, H3C, Juniper, and more. VPN routers, SD-WAN, edge routers — authorized distributor with 17 years of experience in Shenzhen, China.",
   alternates: { canonical: "/products/router" },
 };
 

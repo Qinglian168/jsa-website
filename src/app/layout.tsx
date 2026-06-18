@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | JSA Solution",
   },
   description:
-    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment. We supply network communication equipment, wireless systems, AI computing servers, and smart conference solutions from 35+ authorized brands. 20 years export experience.",
+    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment. We supply network communication equipment, wireless systems, AI computing servers, and smart conference solutions from 50+ authorized brands. 17 years export experience.",
   keywords: [
     "network equipment distributor",
     "Cisco distributor",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "JSA Solution",
     title: "JSA Solution - Professional Network Equipment Distributor",
     description:
-      "Comprehensive ICT & smart office equipment provider in China. 20 years export experience, 35+ authorized brand partnerships. Network equipment, AI servers, smart conference solutions.",
+      "Comprehensive ICT & smart office equipment provider in China. 17 years export experience, 50+ authorized brand partnerships. Network equipment, AI servers, smart conference solutions.",
   },
   robots: {
     index: true,
@@ -89,7 +89,7 @@ export default function RootLayout({
               url: "https://jsasolution.com",
               logo: "https://jsasolution.com/logo.png",
               description:
-                "Professional network equipment distributor with 20 years of experience, authorized partner of 35+ brands.",
+                "Professional network equipment distributor with 17 years of experience, authorized partner of 50+ brands.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Bldg B, Bantian International Center, No.5 Huancheng South Road",

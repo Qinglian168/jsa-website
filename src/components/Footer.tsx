@@ -46,8 +46,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-gray leading-relaxed mb-4">
-              Your trusted network equipment distributor with 20 years of industry experience and import/export license.
-              Authorized partner of 35+ global brands.
+              Your trusted network equipment distributor with 17 years of industry experience and import/export license.
+              Authorized partner of 50+ global brands.
             </p>
             <div className="flex gap-3">
               <a href="#" className="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center hover:bg-primary/10 transition-all" aria-label="LinkedIn">
@@ -122,7 +122,7 @@ export default function Footer() {
             {brands.map((brand) => (
               <span key={brand} className="text-xs text-gray/40 font-medium">{brand}</span>
             ))}
-            <span className="text-xs text-gray/40 font-medium">& 20+ more brands</span>
+            <span className="text-xs text-gray/40 font-medium">& 50+ more brands</span>
           </div>
         </div>
       </div>

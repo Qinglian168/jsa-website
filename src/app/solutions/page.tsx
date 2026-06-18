@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Industry Solutions - Enterprise Networking, Security, Data Center | JSA Solution",
   description:
-    "JSA Solution delivers complete IT solutions: enterprise networking, firewall & security, fiber access, data center networking, AI computing & cloud, and network infrastructure. 20 years of experience.",
+    "JSA Solution delivers complete IT solutions: enterprise networking, firewall & security, fiber access, data center networking, AI computing & cloud, and network infrastructure. 17 years of experience.",
   alternates: { canonical: "/solutions" },
 };
 
@@ -72,7 +72,7 @@ export default function SolutionsPage() {
           </nav>
           <h1 className="text-3xl lg:text-5xl font-extrabold mb-4 text-white">Industry Solutions</h1>
           <p className="text-lg text-white/50 max-w-2xl">
-            Not just products — we deliver complete, tailored solutions backed by 20 years of expertise and 35+ brand partnerships.
+            Not just products — we deliver complete, tailored solutions backed by 17 years of expertise and 50+ brand partnerships.
           </p>
         </div>
       </section>

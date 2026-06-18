@@ -12,7 +12,7 @@ const faqs = [
   {
     category: "About JSA Solution",
     items: [
-      { q: "What is JSA Solution?", a: "JSA Solution (Shenzhen Jiesian Technology Co., Ltd.) is a professional network equipment distributor based in Shenzhen, China. Founded in 2006, we have 20+ years of industry experience and are an authorized partner of 35+ global brands including Cisco, Huawei, H3C, Juniper, Aruba, NVIDIA, Dell, and HPE." },
+      { q: "What is JSA Solution?", a: "JSA Solution (Shenzhen Jiesian Technology Co., Ltd.) is a professional network equipment distributor based in Shenzhen, China. Founded in 2006, we have 17+ years of industry experience and are an authorized partner of 50+ global brands including Cisco, Huawei, H3C, Juniper, Aruba, NVIDIA, Dell, and HPE." },
       { q: "Do you have an import/export license?", a: "Yes, JSA Solution holds a valid import and export operating license issued by the Chinese government. This allows us to handle cross-border procurement seamlessly, providing competitive pricing and smooth logistics for international clients." },
       { q: "Are your products genuine and under warranty?", a: "All products sold by JSA Solution are sourced through authorized distribution channels. Every item comes with the manufacturer's full warranty. We never sell refurbished, counterfeit, or grey-market products." },
     ],

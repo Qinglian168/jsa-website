@@ -4,7 +4,7 @@ import { SolutionPage } from "@/components/SolutionPage";
 export const metadata: Metadata = {
   title: "Enterprise Networking Solution - Office & Campus Network Design",
   description:
-    "End-to-end enterprise networking solutions: core switching, SD-WAN, network security, and monitoring. Designed and delivered by JSA Solution with 20 years of experience.",
+    "End-to-end enterprise networking solutions: core switching, SD-WAN, network security, and monitoring. Designed and delivered by JSA Solution with 17 years of experience.",
   alternates: { canonical: "/solutions/enterprise-networking" },
 };
 
@@ -26,7 +26,7 @@ export default function EnterpriseNetworkingPage() {
       approach={[
         { title: "Network Assessment", desc: "We analyze your current network topology, traffic patterns, and pain points to identify optimization opportunities." },
         { title: "Solution Design", desc: "Our engineers design a tailored network architecture with the right mix of core, distribution, and access layer equipment." },
-        { title: "Product Selection", desc: "We recommend the best products from our 35+ brand partnerships based on your requirements and budget." },
+        { title: "Product Selection", desc: "We recommend the best products from our 50+ brand partnerships based on your requirements and budget." },
         { title: "Deployment & Configuration", desc: "Professional installation, configuration, and testing — ensuring zero-downtime migration where possible." },
         { title: "Ongoing Support", desc: "Post-deployment monitoring, maintenance, and 24/7 technical support to keep your network running smoothly." },
       ]}
@@ -39,8 +39,8 @@ export default function EnterpriseNetworkingPage() {
         { category: "Management", items: ["Cisco DNA Center", "Huawei iMaster NCE", "Aruba Central", "Cloud management platforms"] },
       ]}
       benefits={[
-        "20 years of enterprise networking experience",
-        "35+ brand partnerships — best-of-breed solutions, not locked to one vendor",
+        "17 years of enterprise networking experience",
+        "50+ brand partnerships — best-of-breed solutions, not locked to one vendor",
         "Free network assessment and solution design",
         "Professional deployment with minimal disruption",
         "Import/export license for cross-border procurement",

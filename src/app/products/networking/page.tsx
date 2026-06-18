@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Networking Equipment - Switches, Routers, Firewalls & More | JSA Solution",
   description:
-    "Complete enterprise networking solutions: switches, routers, firewalls, video surveillance, wireless, servers & storages, unified communications, UPS & KVM. From Cisco, Huawei, H3C, Juniper, Fortinet, and 35+ brands.",
+    "Complete enterprise networking solutions: switches, routers, firewalls, video surveillance, wireless, servers & storages, unified communications, UPS & KVM. From Cisco, Huawei, H3C, Juniper, Fortinet, and 50+ brands.",
   alternates: { canonical: "/products/networking" },
 };
 
@@ -105,7 +105,7 @@ export default function NetworkingPage() {
             <h1 className="text-3xl lg:text-5xl font-extrabold text-white">Networking Equipment</h1>
           </div>
           <p className="text-lg text-white/80 max-w-2xl leading-relaxed">
-            Complete enterprise networking infrastructure — from access switches and edge routers to next-gen firewalls and WiFi 7. Authorized distribution from 35+ world-class brands.
+            Complete enterprise networking infrastructure — from access switches and edge routers to next-gen firewalls and WiFi 7. Authorized distribution from 50+ world-class brands.
           </p>
         </div>
       </section>

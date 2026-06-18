@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Network Equipment Products - Routers, Switches, Firewalls, Wireless, Servers | JSA Solution",
   description:
-    "Browse JSA Solution's complete network equipment catalog: routers, switches, firewalls, wireless AP, servers, storages, and more from 35+ global brands including Cisco, Huawei, H3C.",
+    "Browse JSA Solution's complete network equipment catalog: routers, switches, firewalls, wireless AP, servers, storages, and more from 50+ global brands including Cisco, Huawei, H3C.",
   alternates: { canonical: "/products" },
 };
 
@@ -73,7 +73,7 @@ export default function ProductsPage() {
           </nav>
           <h1 className="text-3xl lg:text-5xl font-extrabold mb-4">Product Categories</h1>
           <p className="text-lg text-white/70 max-w-2xl">
-            Explore our 6 core product categories from 35+ world-class brands — Networking, AI Workstations, Smart Conference, Optical Transceivers, Fiber Optic Cables, and Testers & Tools.
+            Explore our 6 core product categories from 50+ world-class brands — Networking, AI Workstations, Smart Conference, Optical Transceivers, Fiber Optic Cables, and Testers & Tools.
           </p>
         </div>
       </section>

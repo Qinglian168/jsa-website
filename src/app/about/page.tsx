@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About JSA Solution - Comprehensive ICT & Smart Office Equipment Provider",
   description:
-    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment, with 20 years of export experience serving clients worldwide.",
+    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment, with 17 years of export experience serving clients worldwide.",
   alternates: { canonical: "/about" },
 };
 
@@ -12,10 +12,12 @@ const milestones = [
   { year: "2006", event: "Company founded in Shenzhen, China" },
   { year: "2009", event: "Obtained import & export operating license" },
   { year: "2012", event: "Became authorized Cisco and Huawei partner" },
-  { year: "2015", event: "Expanded to 20+ brand partnerships" },
+  { year: "2015", event: "Expanded to 35+ brand partnerships" },
+
+
   { year: "2018", event: "Launched video conferencing solutions division" },
   { year: "2021", event: "Entered AI computing server market" },
-  { year: "2024", event: "Reached 35+ authorized brand partnerships" },
+  { year: "2024", event: "Reached 50+ authorized brand partnerships" },
   { year: "2026", event: "Launched jsasolution.com with global reach" },
 ];
 
@@ -39,7 +41,7 @@ export default function AboutPage() {
             name: "Shenzhen Jiesian Technology Co., Ltd.",
             alternateName: "JSA Solution",
             url: "https://jsasolution.com",
-            description: "Professional network equipment distributor with 20 years of experience, authorized partner of 35+ brands, with import/export license.",
+            description: "Professional network equipment distributor with 17 years of experience, authorized partner of 50+ brands, with import/export license.",
             foundingDate: "2006",
             address: {
               "@type": "PostalAddress",
@@ -79,7 +81,7 @@ export default function AboutPage() {
                   <strong className="text-dark">smart office equipment</strong>. We supply a full range of branded products including network communication equipment, full-coverage wireless systems, enterprise storage servers, AI computing power servers, HD audio & video conference systems and interactive smart conference panels.
                 </p>
                 <p>
-                  With <strong className="text-primary">20 years of export experience</strong>, we serve clients worldwide. Our business covers government & enterprise informatization, enterprise networking, AI new infrastructure, park weak current engineering and smart office renovation. Supported by China's complete supply chain, we guarantee genuine products, professional solutions and one-stop services.
+                  With <strong className="text-primary">17 years of export experience</strong>, we serve clients worldwide. Our business covers government & enterprise informatization, enterprise networking, AI new infrastructure, park weak current engineering and smart office renovation. Supported by China's complete supply chain, we guarantee genuine products, professional solutions and one-stop services.
                 </p>
                 <p>
                   We offer <strong className="text-primary">flexible payment terms</strong> and efficient global delivery. With reliable quality, cost performance and full after-sales support, we aim to be your trusted long-term partner for IT hardware procurement.
@@ -88,19 +90,19 @@ export default function AboutPage() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-primary-light rounded-2xl p-6 text-center border border-blue-100">
-                <div className="text-3xl font-extrabold text-primary">20+</div>
+                <div className="text-3xl font-extrabold text-primary">17+</div>
                 <div className="text-sm text-gray mt-1">Years Experience</div>
               </div>
               <div className="bg-amber-50 rounded-2xl p-6 text-center border border-amber-100">
-                <div className="text-3xl font-extrabold text-amber-600">35+</div>
+                <div className="text-3xl font-extrabold text-amber-600">50+</div>
                 <div className="text-sm text-gray mt-1">Brand Partners</div>
               </div>
               <div className="bg-emerald-50 rounded-2xl p-6 text-center border border-emerald-100">
-                <div className="text-3xl font-extrabold text-emerald-600">5000+</div>
+                <div className="text-3xl font-extrabold text-emerald-600">10000+</div>
                 <div className="text-sm text-gray mt-1">Products</div>
               </div>
               <div className="bg-purple-50 rounded-2xl p-6 text-center border border-purple-100">
-                <div className="text-3xl font-extrabold text-purple-600">1000+</div>
+                <div className="text-3xl font-extrabold text-purple-600">2000+</div>
                 <div className="text-sm text-gray mt-1">Clients Served</div>
               </div>
             </div>

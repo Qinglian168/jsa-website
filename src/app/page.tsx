@@ -3,9 +3,9 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSA Solution - ICT & Smart Office Equipment Provider | 20 Years Export Experience",
+  title: "JSA Solution - ICT & Smart Office Equipment Provider | 17 Years Export Experience",
   description:
-    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment. Authorized partner of Cisco, Huawei, H3C, 35+ global brands. 20 years export experience.",
+    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment. Authorized partner of Cisco, Huawei, H3C, 50+ global brands. 17 years export experience.",
   alternates: { canonical: "/" },
 };
 
@@ -56,10 +56,10 @@ const allBrands = [
 ];
 
 const stats = [
-  { value: "20+", label: "Years Experience" },
-  { value: "35+", label: "Brand Partners" },
-  { value: "5000+", label: "Products" },
-  { value: "1000+", label: "Clients Served" },
+  { value: "17+", label: "Years Experience" },
+  { value: "50+", label: "Brand Partners" },
+  { value: "10000+", label: "Products" },
+  { value: "2000+", label: "Clients Served" },
 ];
 
 const solutions = [
@@ -92,13 +92,13 @@ const solutions = [
 const whyUs = [
   {
     icon: "🏆",
-    title: "20 Years of Expertise",
-    desc: "Two decades of network equipment distribution experience, ensuring you get the right products and professional advice.",
+    title: "17 Years of Expertise",
+    desc: "Seventeen years of network equipment distribution experience, ensuring you get the right products and professional advice.",
   },
   {
     icon: "🤝",
-    title: "35+ Authorized Brand Partners",
-    desc: "Direct partnerships with Cisco, Huawei, H3C, Juniper, Aruba, and 30+ more global brands — guaranteed authentic products.",
+    title: "50+ Authorized Brand Partners",
+    desc: "Direct partnerships with Cisco, Huawei, H3C, Juniper, Aruba, and 45+ more global brands — guaranteed authentic products.",
   },
   {
     icon: "📦",
@@ -147,7 +147,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-4 py-1.5 text-sm mb-6">
                 <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                <span className="text-white font-medium">20 Years of Trusted Network Equipment Distribution</span>
+                <span className="text-white font-medium">17 Years of Trusted Network Equipment Distribution</span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-white">
                 Your Trusted <br />
@@ -155,7 +155,7 @@ export default function HomePage() {
                 <br />Distributor
               </h1>
               <p className="text-lg text-white/80 mb-8 max-w-lg leading-relaxed">
-                Your trusted partner for network communication equipment, wireless systems, AI computing servers, and smart conference solutions. 20 years export experience, 35+ authorized brands, one-stop service.
+                Your trusted partner for network communication equipment, wireless systems, AI computing servers, and smart conference solutions. 17 years export experience, 50+ authorized brands, one-stop service.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -223,7 +223,7 @@ export default function HomePage() {
               Product Categories
             </h2>
             <p className="text-gray max-w-2xl mx-auto">
-              From enterprise networking to AI computing — we carry 35+ world-class brands across 5 major product categories.
+              From enterprise networking to AI computing — we carry 50+ world-class brands across 5 major product categories.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -258,7 +258,7 @@ export default function HomePage() {
               Authorized Brand Partners
             </h2>
             <p className="text-gray max-w-2xl mx-auto">
-              Direct partnerships with 35+ global brands ensure authentic products, competitive pricing, and full warranty support.
+              Direct partnerships with 50+ global brands ensure authentic products, competitive pricing, and full warranty support.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-3">
@@ -274,7 +274,7 @@ export default function HomePage() {
           </div>
           <div className="text-center mt-8">
             <Link href="/brands" className="text-primary font-semibold text-sm hover:underline">
-              View all 35+ brands →
+              View all 50+ brands →
             </Link>
           </div>
         </div>
@@ -325,7 +325,7 @@ export default function HomePage() {
               Why Choose JSA Solution?
             </h2>
             <p className="text-gray max-w-2xl mx-auto">
-              With 20 years of industry experience, import/export license, and 35+ brand partnerships, we are your most reliable network equipment procurement partner.
+              With 17 years of industry experience, import/export license, and 50+ brand partnerships, we are your most reliable network equipment procurement partner.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
