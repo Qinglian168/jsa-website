@@ -39,6 +39,7 @@ const mainNav = [
   { href: "/products", label: "Products", mega: true, items: productCategories },
   { href: "/solutions", label: "Solutions", mega: true, items: solutionCategories },
   { href: "/events-news", label: "Events & News" },
+  { href: "/about", label: "About Us" },
   { href: "/contact", label: "Contact Us" },
 ];
 
