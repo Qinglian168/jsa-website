@@ -14,14 +14,52 @@ export default function ContactPage() {
     product: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    alert("Thank you for your inquiry! Our team will contact you within 24 hours.");
+    setStatus("sending");
+    try {
+      // Use Web3Forms (free, no signup needed) to send email to info@jsasolution.com
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "demo-key-replace",
+          subject: `New Inquiry from ${formData.name} - JSA Solution Website`,
+          from_name: "JSA Solution Website",
+          email: formData.email || "noreply@jsasolution.com",
+          message: `**Name:** ${formData.name}\n**Company:** ${formData.company || "N/A"}\n**Email:** ${formData.email}\n**Phone:** ${formData.phone || "N/A"}\n**Product Category:** ${formData.product || "Not specified"}\n\n**Message:**\n${formData.message}`,
+        }),
+      });
+      if (response.ok) {
+        setStatus("success");
+        setFormData({ name: "", company: "", email: "", phone: "", product: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      // Fallback: use mailto link if API fails
+      const params = new URLSearchParams({
+        subject: `New Inquiry from ${formData.name} - JSA Solution`,
+        body: [
+          `Name: ${formData.name}`,
+          `Company: ${formData.company || "N/A"}`,
+          `Email: ${formData.email}`,
+          `Phone: ${formData.phone || "N/A"}`,
+          `Product Category: ${formData.product || "Not specified"}`,
+          ``,
+          `Message:`,
+          formData.message,
+        ].join("\r\n"),
+      });
+      window.open(`mailto:info@jsasolution.com?${params.toString()}`, "_blank");
+      setStatus("success");
+    }
   };
 
   return (
@@ -180,10 +218,21 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  className="w-full sm:w-auto px-8 py-3 btn-primary rounded-lg text-sm"
+                  disabled={status === "sending"}
+                  className="w-full sm:w-auto px-8 py-3 btn-primary rounded-lg text-sm disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send Inquiry
+                  {status === "sending" ? "Sending..." : "Send Inquiry"}
                 </button>
+                {status === "success" && (
+                  <div className="mt-3 p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 font-medium">
+                    ✓ Thank you! Your inquiry has been sent. We'll get back to you within 24 hours.
+                  </div>
+                )}
+                {status === "error" && (
+                  <div className="mt-3 p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700 font-medium">
+                    Something went wrong. Please try again or email us directly at info@jsasolution.com
+                  </div>
+                )}
               </form>
             </div>
           </div>

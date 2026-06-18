@@ -40,6 +40,7 @@ const mainNav = [
   { href: "/solutions", label: "Solutions", mega: true, items: solutionCategories },
   { href: "/events-news", label: "Events & News" },
   { href: "/about", label: "About Us" },
+  { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact Us" },
 ];
 
@@ -215,6 +216,7 @@ export default function Header() {
               <Link href="/events-news" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Events & News</Link>
               <Link href="/brands" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Brands</Link>
               <Link href="/about" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>About Us</Link>
+              <Link href="/faq" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>FAQ</Link>
               <Link href="/contact" className="block px-3 py-2 text-sm font-medium text-gray hover:text-primary hover:bg-primary-light/50 rounded-md" onClick={() => setMobileOpen(false)}>Contact Us</Link>
             </div>
 

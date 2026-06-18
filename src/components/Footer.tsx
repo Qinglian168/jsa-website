@@ -38,7 +38,7 @@ export default function Footer() {
     <footer className="bg-slate-50 border-t border-border">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -128,14 +128,6 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
-            </ul>
-            <h3 className="text-sm font-semibold uppercase tracking-wider text-primary mt-6 mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li><Link href="/about" className="text-sm text-gray hover:text-primary transition-colors">About Us</Link></li>
-              <li><Link href="/brands" className="text-sm text-gray hover:text-primary transition-colors">Brands</Link></li>
-              <li><Link href="/events-news" className="text-sm text-gray hover:text-primary transition-colors">Events & News</Link></li>
-              <li><Link href="/faq" className="text-sm text-gray hover:text-primary transition-colors">FAQ</Link></li>
-              <li><Link href="/contact" className="text-sm text-gray hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
 
