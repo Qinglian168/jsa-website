@@ -24,16 +24,20 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("sending");
     try {
-      // Use Web3Forms (free, no signup needed) to send email to info@jsasolution.com
+      // Use Web3Forms to send email to info@jsasolution.com
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "demo-key-replace",
+          access_key: "d2fcd521-50bb-4ec6-976b-05c4e35db872",
           subject: `New Inquiry from ${formData.name} - JSA Solution Website`,
           from_name: "JSA Solution Website",
+          name: formData.name,
           email: formData.email || "noreply@jsasolution.com",
-          message: `**Name:** ${formData.name}\n**Company:** ${formData.company || "N/A"}\n**Email:** ${formData.email}\n**Phone:** ${formData.phone || "N/A"}\n**Product Category:** ${formData.product || "Not specified"}\n\n**Message:**\n${formData.message}`,
+          Company: formData.company || "N/A",
+          Phone: formData.phone || "N/A",
+          "Product Category": formData.product || "Not specified",
+          message: formData.message,
         }),
       });
       if (response.ok) {
