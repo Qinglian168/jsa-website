@@ -2,4 +2,22 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# Allow major search engines full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block AI training crawlers from indexing duplicate content (optional - remove to allow)
+# User-agent: GPTBot
+# Disallow: /
+
+# Sitemap
 Sitemap: https://jsasolution.com/sitemap.xml
