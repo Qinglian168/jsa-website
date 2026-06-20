@@ -3,8 +3,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Unified Communications - IP PBX, Phones, Video Conferencing | JSA Solution",
-  description: "IP PBX, IP phones, video conferencing systems, collaboration tools from Yealink, Poly, Cisco, Yeastar. Complete unified communications solutions.",
+  description: "Complete unified communications solutions: IP PBX, IP phones, video conferencing, and smart interactive displays from Yealink, Poly, MAXHUB, Horion, Grandstream, Yeastar. VoIP and collaboration equipment distributor.",
   alternates: { canonical: "/products/networking/unified-communications" },
+  openGraph: {
+    title: "Unified Communications Solutions - IP PBX, Video Conferencing",
+    description: "IP PBX, IP phones, video conferencing, smart tablets from Yealink, Poly, MAXHUB, Horion. Complete UC solutions.",
+    url: "https://jsasolution.com/products/networking/unified-communications",
+    type: "website",
+  },
 };
 
 export default function UnifiedCommsPage() {
@@ -66,7 +72,8 @@ export default function UnifiedCommsPage() {
         { q: "Do your UC solutions support Microsoft Teams and Zoom?", a: "Yes, Poly, Cisco Webex, and Logitech devices are certified for Microsoft Teams and Zoom. Yealink also offers Teams-certified IP phones." },
         { q: "Can you help migrate from legacy phone systems to IP PBX?", a: "Absolutely. We provide migration planning, equipment selection, configuration, and cutover support to ensure a smooth transition from legacy systems to modern IP communications." },
       ]}
-      schemaDescription="Unified communications equipment including Yealink IP phones, Poly Studio video bars, Yeastar P-Series PBX, Cisco Webex Room, Logitech Rally Bar."
+      schemaDescription="Unified communications equipment including Yealink IP phones, Poly Studio video bars, Yeastar P-Series PBX, Cisco Webex Room, Logitech Rally Bar, MAXHUB and Horion smart tablets."
+      canonicalPath="/products/networking/unified-communications"
     />
   );
 }
