@@ -16,7 +16,7 @@ export default function UnifiedCommsPage() {
       icon="📞"
       color="from-emerald-500 to-teal-600"
       bannerImage="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&q=80"
-      brands={["Yealink", "Poly", "Cisco", "Yeastar", "Avaya", "Unify", "Grandstream", "Logitech"]}
+      brands={["Yealink", "Poly", "MAXHUB", "Horion", "Logitech", "BARCO", "Jabra", "Grandstream", "Yeastar", "Avaya", "Unify"]}
       products={[
         {
           name: "Yealink T5 Series IP Phones",
