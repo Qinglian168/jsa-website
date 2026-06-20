@@ -4,8 +4,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Network Equipment Products - Routers, Switches, Firewalls, Wireless, Servers | JSA Solution",
   description:
-    "Browse JSA Solution's complete network equipment catalog: routers, switches, firewalls, wireless AP, servers, storages, and more from 50+ global brands including Cisco, Huawei, H3C.",
+    "Browse JSA Solution's complete network equipment catalog: enterprise routers, switches, firewalls, wireless AP, AI computing servers, unified communications, smart conference, fiber optic, and optical transceivers. 10000+ products from 50+ global brands including Cisco, Huawei, H3C, Juniper, NVIDIA, Dell.",
   alternates: { canonical: "/products" },
+  openGraph: {
+    title: "Network Equipment Products Catalog - 10000+ Products",
+    description: "Routers, switches, firewalls, wireless, AI servers, unified comms, fiber optics from 50+ brands.",
+    url: "https://jsasolution.com/products",
+    type: "website",
+  },
 };
 
 const categories = [
