@@ -3,10 +3,32 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "JSA Solution - ICT & Smart Office Equipment Provider | 17 Years Export Experience",
+  title: "JSA Solution - Network Equipment Distributor & Smart Office Solutions | 17 Years Export Experience",
   description:
-    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment. Authorized partner of Cisco, Huawei, H3C, 50+ global brands. 17 years export experience.",
+    "JSA Solution is a leading network communication equipment distributor in China since 2010. Authorized partner of Cisco, Huawei, H3C, Juniper, Fortinet, and 50+ global brands. Supplying enterprise networking, AI computing servers, unified communications, and smart conference solutions to 80+ countries. 10000+ products, fast global shipping.",
   alternates: { canonical: "/" },
+  openGraph: {
+    title: "JSA Solution - Network Equipment Distributor & Smart Office Solutions",
+    description:
+      "Leading network communication equipment distributor in China. 50+ authorized brands, 10000+ products, global shipping to 80+ countries.",
+    url: "https://jsasolution.com",
+    type: "website",
+    images: [
+      {
+        url: "/jsa-poster.png",
+        width: 1400,
+        height: 933,
+        alt: "JSA Solution Product Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "JSA Solution - Network Equipment Distributor",
+    description:
+      "Leading network communication equipment distributor in China. 50+ brands, 10000+ products, global shipping.",
+    images: ["/jsa-poster.png"],
+  },
 };
 
 const categories = [
