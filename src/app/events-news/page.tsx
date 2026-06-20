@@ -2,8 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Events & News - JSA Solution",
-  description: "Latest events, product updates, and industry news from JSA Solution, your trusted network equipment distributor.",
+  title: "Events & News - Network Equipment Industry Updates | JSA Solution",
+  description: "Latest events, product updates, and industry news from JSA Solution. Stay informed about Cisco, Huawei, Fortinet, H3C networking innovations and AI-ready infrastructure trends.",
+  alternates: { canonical: "/events-news" },
+  openGraph: {
+    title: "Events & News - Network Equipment Industry Updates",
+    description: "Latest events, product updates, and industry news from JSA Solution.",
+    url: "https://jsasolution.com/events-news",
+    type: "website",
+  },
 };
 
 const newsItems = [
