@@ -24,29 +24,30 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("sending");
     try {
-      // Use Web3Forms to send email to info@jsasolution.com
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
         body: JSON.stringify({
           access_key: "d2fcd521-50bb-4ec6-976b-05c4e35db872",
           subject: `New Inquiry from ${formData.name} - JSA Solution Website`,
-          from_name: "JSA Solution Website",
           name: formData.name,
           email: formData.email || "noreply@jsasolution.com",
-          Company: formData.company || "N/A",
-          Phone: formData.phone || "N/A",
-          "Product Category": formData.product || "Not specified",
+          company: formData.company || "N/A",
+          phone: formData.phone || "N/A",
+          product_category: formData.product || "Not specified",
           message: formData.message,
         }),
       });
-      if (response.ok) {
+      const result = await response.json();
+      console.log("Web3Forms result:", result);
+      if (response.ok && result.success) {
         setStatus("success");
         setFormData({ name: "", company: "", email: "", phone: "", product: "", message: "" });
       } else {
-        setStatus("error");
+        // API failed — fall back to mailto
+        throw new Error(result.message || "API error");
       }
-    } catch {
+    } catch (err) {
       // Fallback: use mailto link if API fails
       const params = new URLSearchParams({
         subject: `New Inquiry from ${formData.name} - JSA Solution`,
