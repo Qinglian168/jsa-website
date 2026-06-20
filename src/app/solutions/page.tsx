@@ -2,10 +2,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Industry Solutions - Enterprise Networking, Security, Data Center | JSA Solution",
+  title: "Industry Solutions - Enterprise Networking, Security, Data Center, AI | JSA Solution",
   description:
-    "JSA Solution delivers complete IT solutions: enterprise networking, firewall & security, fiber access, data center networking, AI computing & cloud, and network infrastructure. 17 years of experience.",
+    "JSA Solution delivers complete IT infrastructure solutions: enterprise networking, firewall & security, fiber access, data center networking, AI computing & cloud, campus wireless, and smart meeting room solutions. 17 years of experience serving 80+ countries.",
   alternates: { canonical: "/solutions" },
+  openGraph: {
+    title: "Industry Solutions - Enterprise Networking, Security, Data Center, AI",
+    description: "Complete IT infrastructure solutions for enterprise. 17 years experience, 80+ countries served.",
+    url: "https://jsasolution.com/solutions",
+    type: "website",
+  },
 };
 
 const solutions = [
