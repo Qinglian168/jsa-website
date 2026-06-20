@@ -3,10 +3,17 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About JSA Solution - Comprehensive ICT & Smart Office Equipment Provider",
+  title: "About JSA Solution - 17 Years Network Equipment Distribution Experience",
   description:
-    "JSA Solution is a comprehensive service provider in China specializing in the communication & information industry and smart office equipment, with 17 years of export experience serving clients worldwide.",
+    "Founded in 2010 in Shenzhen, JSA Solution (Shenzhen Jiesian Technology Co., Ltd.) is a leading network communication equipment distributor with import/export license. 50+ authorized brand partnerships, 2000+ global clients, 17 years of export experience serving 80+ countries.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About JSA Solution - 17 Years Network Equipment Distribution",
+    description:
+      "Leading network communication equipment distributor in Shenzhen, China. 50+ brands, 2000+ clients, 80+ countries served.",
+    url: "https://jsasolution.com/about",
+    type: "website",
+  },
 };
 
 const milestones = [
@@ -43,7 +50,7 @@ export default function AboutPage() {
             alternateName: "JSA Solution",
             url: "https://jsasolution.com",
             description: "Professional network equipment distributor with 17 years of experience, authorized partner of 50+ brands, with import/export license.",
-            foundingDate: "2006",
+            foundingDate: "2010",
             address: {
               "@type": "PostalAddress",
               streetAddress: "Floor 6, Bldg. B, Bantian International Center, No. 5, South Huancheng Road, Bantian Street",
