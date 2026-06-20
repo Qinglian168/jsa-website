@@ -49,6 +49,12 @@ export default function UnifiedCommsPage() {
           features: ["No user license", "500 users", "GDMS cloud management", "Built-in WiFi"],
         },
         {
+          name: "Horion Smart Tablets & Podium",
+          series: "Horion",
+          desc: "Interactive flat panels and smart podiums for education and meeting scenarios. 4K touch display, wireless casting, and built-in whiteboard software.",
+          features: ["4K touch display", "Wireless casting", "Smart podium", "Whiteboard built-in"],
+        },
+        {
           name: "Logitech Rally Bar",
           series: "Logitech",
           desc: "Premium all-in-one video bar with PTZ camera, beamforming mics, and AI-based RightSight framing.",
