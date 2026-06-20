@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "FAQ - Network Equipment Purchasing, Shipping, Warranty Questions",
   description:
-    "Frequently asked questions about purchasing network equipment from JSA Solution: ordering, shipping, warranty, pricing, and technical support.",
+    "Frequently asked questions about JSA Solution: company profile, products, pricing, worldwide shipping (DHL, FedEx, UPS, Air Cargo, sea freight), warranty, and technical support.",
   alternates: { canonical: "/faq" },
 };
 
@@ -12,7 +12,7 @@ const faqs = [
   {
     category: "About JSA Solution",
     items: [
-      { q: "What is JSA Solution?", a: "JSA Solution (Shenzhen Jiesian Technology Co., Ltd.) is a professional network equipment distributor based in Shenzhen, China. Founded in 2006, we have 17+ years of industry experience and are an authorized partner of 50+ global brands including Cisco, Huawei, H3C, Juniper, Aruba, NVIDIA, Dell, and HPE." },
+      { q: "What is JSA Solution?", a: "JSA Solution (Shenzhen Jiesian Technology Co., Ltd.) is a professional network communication equipment distributor based in Shenzhen, China. Founded in 2010, we have 17+ years of industry experience and are an authorized partner of 50+ global brands including Cisco, Huawei, H3C, Juniper, Aruba, NVIDIA, Dell, Grandstream, Yealink, HPE, Poly and so on." },
       { q: "Do you have an import/export license?", a: "Yes, JSA Solution holds a valid import and export operating license issued by the Chinese government. This allows us to handle cross-border procurement seamlessly, providing competitive pricing and smooth logistics for international clients." },
       { q: "Are your products genuine and under warranty?", a: "All products sold by JSA Solution are sourced through authorized distribution channels. Every item comes with the manufacturer's full warranty. We never sell refurbished, counterfeit, or grey-market products." },
     ],
@@ -29,8 +29,8 @@ const faqs = [
   {
     category: "Shipping & Delivery",
     items: [
-      { q: "Do you ship internationally?", a: "Yes! We ship worldwide via DHL, FedEx, UPS, and sea freight. Our Shenzhen location gives us excellent logistics connectivity to Asia, Europe, the Middle East, and the Americas." },
-      { q: "How fast is delivery?", a: "For in-stock items in our Shenzhen warehouse, we dispatch within 1-2 business days. International express shipping typically takes 3-7 days. Sea freight takes 15-35 days depending on destination." },
+      { q: "Do you ship internationally?", a: "Yes! We ship worldwide via DHL, FedEx, UPS, Air Cargo, sea freight etc. Our Shenzhen location gives us excellent logistics connectivity to Asia, Europe, the Middle East, the Americas and Africa." },
+      { q: "How fast is delivery?", a: "For in-stock items in our Shenzhen warehouse, we dispatch within 1-3 business days. International express shipping typically takes 3-7 days. Sea freight takes 15-35 days depending on destination." },
       { q: "Do you ship to Hong Kong?", a: "Yes, we ship to Hong Kong, China and worldwide. Shenzhen's proximity to Hong Kong, China means very fast delivery times (1-2 days)." },
     ],
   },
