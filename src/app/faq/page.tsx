@@ -2,10 +2,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ - Network Equipment Purchasing, Shipping, Warranty Questions",
+  title: "FAQ - Network Equipment Shipping, Warranty, Pricing | JSA Solution",
   description:
-    "Frequently asked questions about JSA Solution: company profile, products, pricing, worldwide shipping (DHL, FedEx, UPS, Air Cargo, sea freight), warranty, and technical support.",
+    "Frequently asked questions about JSA Solution: company profile, products, pricing, worldwide shipping (DHL, FedEx, UPS, Air Cargo, sea freight to Africa, Asia, Middle East), warranty, and technical support. 17 years export experience.",
   alternates: { canonical: "/faq" },
+  openGraph: {
+    title: "FAQ - Network Equipment Shipping, Warranty, Pricing",
+    description: "Answers to common questions about purchasing network equipment from JSA Solution.",
+    url: "https://jsasolution.com/faq",
+    type: "website",
+  },
 };
 
 const faqs = [
