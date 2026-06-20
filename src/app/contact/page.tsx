@@ -14,57 +14,40 @@ export default function ContactPage() {
     product: "",
     message: "",
   });
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "sent">("idle");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("sending");
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({
-          access_key: "d2fcd521-50bb-4ec6-976b-05c4e35db872",
-          subject: `New Inquiry from ${formData.name} - JSA Solution Website`,
-          name: formData.name,
-          email: formData.email || "noreply@jsasolution.com",
-          company: formData.company || "N/A",
-          phone: formData.phone || "N/A",
-          product_category: formData.product || "Not specified",
-          message: formData.message,
-        }),
-      });
-      const result = await response.json();
-      console.log("Web3Forms result:", result);
-      if (response.ok && result.success) {
-        setStatus("success");
-        setFormData({ name: "", company: "", email: "", phone: "", product: "", message: "" });
-      } else {
-        // API failed — fall back to mailto
-        throw new Error(result.message || "API error");
-      }
-    } catch (err) {
-      // Fallback: use mailto link if API fails
-      const params = new URLSearchParams({
-        subject: `New Inquiry from ${formData.name} - JSA Solution`,
-        body: [
-          `Name: ${formData.name}`,
-          `Company: ${formData.company || "N/A"}`,
-          `Email: ${formData.email}`,
-          `Phone: ${formData.phone || "N/A"}`,
-          `Product Category: ${formData.product || "Not specified"}`,
-          ``,
-          `Message:`,
-          formData.message,
-        ].join("\r\n"),
-      });
-      window.open(`mailto:info@jsasolution.com?${params.toString()}`, "_blank");
-      setStatus("success");
-    }
+    // Open user's email client with form data pre-filled
+    const params = new URLSearchParams({
+      subject: `New Inquiry from ${formData.name} - JSA Solution Website`,
+      body: [
+        `Dear JSA Team,`,
+        ``,
+        `I would like to inquire about the following products/services:`,
+        ``,
+        `--- Contact Information ---`,
+        `Name: ${formData.name}`,
+        `Company: ${formData.company || "N/A"}`,
+        `Email: ${formData.email}`,
+        `Phone: ${formData.phone || "N/A"}`,
+        `Product Category: ${formData.product || "Not specified"}`,
+        ``,
+        `--- Message ---`,
+        `${formData.message}`,
+        ``,
+        `Please get back to me at your earliest convenience.`,
+        ``,
+        `Best regards,`,
+        `${formData.name}`,
+      ].join("\r\n"),
+    });
+    window.location.href = `mailto:info@jsasolution.com?${params.toString()}`;
+    setStatus("sent");
   };
 
   return (
@@ -136,7 +119,7 @@ export default function ContactPage() {
             <div className="lg:col-span-3">
               <form onSubmit={handleSubmit} className="bg-white border border-border rounded-2xl p-6 lg:p-8 space-y-5 shadow-tech">
                 <h2 className="text-xl font-bold text-dark mb-2">Request a Quote</h2>
-                <p className="text-sm text-gray mb-4">Fill out the form below and our team will get back to you within 24 hours.</p>
+                <p className="text-sm text-gray mb-4">Fill out the form below and click Send Inquiry to email us directly. We respond within 24 hours.</p>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
@@ -223,19 +206,15 @@ export default function ContactPage() {
 
                 <button
                   type="submit"
-                  disabled={status === "sending"}
-                  className="w-full sm:w-auto px-8 py-3 btn-primary rounded-lg text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full sm:w-auto px-8 py-3 btn-primary rounded-lg text-sm flex items-center gap-2"
                 >
-                  {status === "sending" ? "Sending..." : "Send Inquiry"}
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                  Send Inquiry
                 </button>
-                {status === "success" && (
-                  <div className="mt-3 p-4 bg-green-50 border border-green-200 rounded-lg text-sm text-green-700 font-medium">
-                    ✓ Thank you! Your inquiry has been sent. We'll get back to you within 24 hours.
-                  </div>
-                )}
-                {status === "error" && (
-                  <div className="mt-3 p-4 bg-red-50 border border-red-200 rounded-lg text-sm text-red-700 font-medium">
-                    Something went wrong. Please try again or email us directly at info@jsasolution.com
+                {status === "sent" && (
+                  <div className="mt-3 p-4 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-700">
+                    <div className="font-medium mb-1">📧 Your email client is opening...</div>
+                    <div className="text-xs text-blue-600">Please click "Send" in your email app to deliver your inquiry to info@jsasolution.com. If the email client didn't open, check your browser's popup blocker or <a href="mailto:info@jsasolution.com" className="underline font-medium">click here to email us directly</a>.</div>
                   </div>
                 )}
               </form>
