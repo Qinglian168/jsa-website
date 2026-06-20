@@ -2,10 +2,16 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Authorized Brand Partners - 50+ Global Network Equipment Brands",
+  title: "Authorized Brand Partners - 50+ Global Network Equipment Brands | JSA Solution",
   description:
-    "JSA Solution is an authorized distributor of 50+ global network equipment brands: Cisco, Huawei, H3C, Juniper, Aruba, Ruckus, NVIDIA, Dell, HPE, Yealink, Poly, and more.",
+    "JSA Solution is an authorized distributor of 50+ global network equipment brands: Cisco, Huawei, H3C, Juniper, Aruba, Ruckus, Fortinet, NVIDIA, Dell, HPE, Intel, Yealink, Poly, MAXHUB, Horion, Grandstream, and more. Genuine products with full warranty.",
   alternates: { canonical: "/brands" },
+  openGraph: {
+    title: "50+ Authorized Brand Partners - Network Equipment Distributor",
+    description: "Authorized distributor of Cisco, Huawei, H3C, Juniper, NVIDIA, Yealink, Poly, MAXHUB, Horion and 50+ more brands.",
+    url: "https://jsasolution.com/brands",
+    type: "website",
+  },
 };
 
 const brandCategories = [
