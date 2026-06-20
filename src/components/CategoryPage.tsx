@@ -24,9 +24,14 @@ interface CategoryPageProps {
   products: Product[];
   faqs: FAQ[];
   schemaDescription: string;
+  canonicalPath?: string;
 }
 
-export function CategoryPage({ title, subtitle, description, icon, color, bannerImage, brands, products, faqs, schemaDescription }: CategoryPageProps) {
+export function CategoryPage({ title, subtitle, description, icon, color, bannerImage, brands, products, faqs, schemaDescription, canonicalPath }: CategoryPageProps) {
+  const pageUrl = canonicalPath
+    ? `https://jsasolution.com${canonicalPath}`
+    : `https://jsasolution.com/products/${subtitle.toLowerCase().replace(/\s+/g, "-")}`;
+
   return (
     <>
       <script
@@ -37,7 +42,7 @@ export function CategoryPage({ title, subtitle, description, icon, color, banner
             "@type": "CollectionPage",
             name: title,
             description: schemaDescription,
-            url: `https://jsasolution.com/products/${subtitle.toLowerCase().replace(/\s+/g, "-")}`,
+            url: pageUrl,
             mainEntity: {
               "@type": "ItemList",
               itemListElement: products.map((p, i) => ({
@@ -50,6 +55,26 @@ export function CategoryPage({ title, subtitle, description, icon, color, banner
           }),
         }}
       />
+      {/* FAQ Schema for rich snippets */}
+      {faqs.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.q,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.a,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
 
       {/* Hero */}
       <section className="relative min-h-[420px] flex items-center overflow-hidden">
