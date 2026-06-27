@@ -15,6 +15,12 @@ export const metadata: Metadata = {
 
 const newsItems = [
   {
+    date: "June 27, 2026",
+    title: "AI-Native Enterprise Infrastructure 2026: Cisco-NVIDIA AI Factory, Huawei Xinghe Campus, and Smart Collaboration Revolution",
+    excerpt: "From Cisco's 102.4 Tbps Secure AI Factory with NVIDIA Vera Rubin to Huawei's 4th consecutive Gartner Leader recognition, H3C's Agentic AI-Defined Network, and Yealink's AI-powered MeetingBar A50 — discover the 2026 innovations reshaping enterprise networking, security, and collaboration.",
+    slug: "ai-native-enterprise-infrastructure-2026",
+  },
+  {
     date: "June 12, 2026",
     title: "AI-Ready Enterprise Networking in 2026: Cisco, Fortinet, and Huawei Lead the Infrastructure Revolution",
     excerpt: "From Cisco's 102.4 Tbps Silicon One G300 and Fortinet's AI-native FortiGate G Series to Huawei's Wi-Fi 7 breakthroughs — discover the technologies reshaping enterprise networking and how to prepare your infrastructure for AI workloads.",
