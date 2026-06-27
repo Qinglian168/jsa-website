@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/1wf-stzauv23n.css","style"]
+:HL["/_next/static/chunks/0u_unx1gpbhhg.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap","style"]
 :HL["https://images.unsplash.com/photo-1563986768609-322da13575f2?w=1920&q=80","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"networking","param":null,"prefetchHints":0,"slots":{"children":{"name":"routers","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"_gyu5pG8irBl3EDZM4LSL"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"products","param":null,"prefetchHints":0,"slots":{"children":{"name":"networking","param":null,"prefetchHints":0,"slots":{"children":{"name":"routers","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"b6K3XdOYzprY_JG9mx7w6"}
