@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { fetchNewsFromNotion, isNotionConfigured } from "@/lib/notion";
+import { INITIAL_NEWS } from "@/lib/admin/data";
+import type { NewsItem } from "@/lib/admin/types";
 
 export const metadata: Metadata = {
   title: "Events & News - Network Equipment Industry Updates | JSA Solution",
@@ -13,22 +16,23 @@ export const metadata: Metadata = {
   },
 };
 
-const newsItems = [
-  {
-    date: "June 27, 2026",
-    title: "AI-Native Enterprise Infrastructure 2026: Cisco-NVIDIA AI Factory, Huawei Xinghe Campus, and Smart Collaboration Revolution",
-    excerpt: "From Cisco's 102.4 Tbps Secure AI Factory with NVIDIA Vera Rubin to Huawei's 4th consecutive Gartner Leader recognition, H3C's Agentic AI-Defined Network, and Yealink's AI-powered MeetingBar A50 — discover the 2026 innovations reshaping enterprise networking, security, and collaboration.",
-    slug: "ai-native-enterprise-infrastructure-2026",
-  },
-  {
-    date: "June 12, 2026",
-    title: "AI-Ready Enterprise Networking in 2026: Cisco, Fortinet, and Huawei Lead the Infrastructure Revolution",
-    excerpt: "From Cisco's 102.4 Tbps Silicon One G300 and Fortinet's AI-native FortiGate G Series to Huawei's Wi-Fi 7 breakthroughs — discover the technologies reshaping enterprise networking and how to prepare your infrastructure for AI workloads.",
-    slug: "ai-ready-enterprise-networking-2026",
-  },
-];
+async function getNews(): Promise<NewsItem[]> {
+  if (!isNotionConfigured()) {
+    return INITIAL_NEWS;
+  }
 
-export default function EventsNewsPage() {
+  try {
+    const notionNews = await fetchNewsFromNotion();
+    return notionNews.length > 0 ? notionNews : INITIAL_NEWS;
+  } catch (error) {
+    console.error("Failed to fetch news from Notion:", error);
+    return INITIAL_NEWS;
+  }
+}
+
+export default async function EventsNewsPage() {
+  const newsItems = await getNews();
+
   return (
     <div className="min-h-screen bg-[#f0f7ff]">
       {/* Hero */}
