@@ -24,6 +24,7 @@ export const ADMIN_MENU = [
   { id: "dashboard", label: "概览", href: "/admin", icon: "🏠" },
   { id: "content", label: "内容管理", href: "/admin/content", icon: "📝" },
   { id: "news", label: "新闻文章", href: "/admin/content/news", icon: "📰", parent: "content" },
+  { id: "products", label: "产品管理", href: "/admin/content/products", icon: "📦", parent: "content" },
   { id: "site", label: "网站设置", href: "/admin/settings", icon: "⚙️" },
   { id: "analytics", label: "运营罗盘", href: "https://analytics.google.com/analytics/web/", icon: "📊", external: true },
 ];

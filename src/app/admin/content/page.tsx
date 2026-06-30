@@ -16,12 +16,11 @@ const contentModules = [
   },
   {
     id: "products",
-    title: "产品信息",
-    desc: "编辑产品分类、产品描述、品牌信息",
-    href: "#",
+    title: "产品管理",
+    desc: "编辑产品分类、品牌、产品详情、FAQ，生成替换代码",
+    href: "/admin/content/products",
     icon: "📦",
-    count: "即将上线",
-    disabled: true,
+    count: "4 个分类",
   },
   {
     id: "settings",
@@ -55,12 +54,7 @@ export default function ContentPage() {
                 <Link
                   key={module.id}
                   href={module.href}
-                  className={`block bg-white rounded-xl border border-border p-6 transition-all ${
-                    module.disabled
-                      ? "opacity-60 cursor-not-allowed"
-                      : "hover:border-primary hover:shadow-md"
-                  }`}
-                  onClick={(e) => module.disabled && e.preventDefault()}
+                  className="block bg-white rounded-xl border border-border p-6 transition-all hover:border-primary hover:shadow-md"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <span className="text-3xl">{module.icon}</span>

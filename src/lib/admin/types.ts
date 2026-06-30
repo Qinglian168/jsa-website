@@ -23,3 +23,31 @@ export interface AdminStats {
   totalProducts: number;
   totalSolutions: number;
 }
+
+export interface ProductCategory {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  icon: string;
+  color: string;
+  bannerImage: string;
+  brands: string[];
+  products: ProductItem[];
+  faqs: FAQItem[];
+  schemaDescription: string;
+  published: boolean;
+}
+
+export interface ProductItem {
+  id: string;
+  name: string;
+  series: string;
+  desc: string;
+  features: string[];
+}
+
+export interface FAQItem {
+  q: string;
+  a: string;
+}
