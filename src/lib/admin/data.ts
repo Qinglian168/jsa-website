@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "3",
+    date: "July 14, 2026",
+    title: "China HCI Market Q1 2026: 3.4B RMB as VMware Replacement and Software-Defined Innovation Reshape Enterprise Infrastructure",
+    excerpt: "IDC reports China's hyper-converged infrastructure market hit 3.4 billion RMB in Q1 2026, with Sangfor, Huawei, H3C, Inspur, and Lenovo leading. VMware replacement wave and hardware cost pressures drive software-defined adoption. JSA Solution guides enterprises through HCI transition and VMware migration.",
+    slug: "china-hci-market-2026-q1-vmware-replacement",
+    published: true,
+  },
+  {
     id: "1",
     date: "June 27, 2026",
     title: "AI-Native Enterprise Infrastructure 2026: Cisco-NVIDIA AI Factory, Huawei Xinghe Campus, and Smart Collaboration Revolution",
