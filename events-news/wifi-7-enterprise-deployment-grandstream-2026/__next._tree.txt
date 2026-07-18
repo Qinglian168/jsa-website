@@ -1,4 +1,6 @@
-:HL["/_next/static/chunks/2hvpqdp1pfaug.css","style"]
+:HL["/_next/static/chunks/36edr2bgs52ik.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap","style"]
 :HL["/images/news/wifi-7-enterprise-hero.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"events-news","param":null,"prefetchHints":0,"slots":{"children":{"name":"wifi-7-enterprise-deployment-grandstream-2026","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"4Cc__MHd7OV-YW62qU_2L"}
+:HL["/images/news/wifi7-market-office.jpg","image"]
+:HL["/images/news/grandstream-wifi7-product-lineup.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"events-news","param":null,"prefetchHints":0,"slots":{"children":{"name":"wifi-7-enterprise-deployment-grandstream-2026","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"FzeKLbwckVXIcCe9weB-D"}
