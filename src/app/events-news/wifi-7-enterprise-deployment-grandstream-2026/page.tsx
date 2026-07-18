@@ -211,10 +211,10 @@ export default function WiFi7EnterpriseDeployment2026() {
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <img
               src="/images/news/wifi-7-enterprise-hero.png"
-              alt="Wi-Fi 7 enterprise deployment with Grandstream GWN access points in a modern office environment showing 11 Gbps wireless speeds"
+              alt="Wi-Fi 7 enterprise deployment with Grandstream GWN access points in a modern office environment"
               className="w-full h-auto"
-              width={1536}
-              height={1024}
+              width={1216}
+              height={832}
             />
           </div>
           <p className="text-sm text-gray/60 mt-3 text-center">
