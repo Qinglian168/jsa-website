@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "4",
+    date: "July 18, 2026",
+    title: "Wi-Fi 7 Enterprise Deployment 2026: Grandstream GWN Series Delivers 21Gbps Wireless as Market Hits $2.7 Billion",
+    excerpt: "Wi-Fi 7 captures 44.5% of enterprise WLAN revenue in Q1 2026. Grandstream's GWN7674 (21Gbps), GWN7672L (11Gbps), and GWN7670E (3.6Gbps) deliver tri-band Wi-Fi 7 with MLO, 4096-QAM, and 320MHz channels. Free GDMS cloud management. JSA Solution supplies Grandstream WiFi 7 APs for enterprise, education, and hospitality.",
+    slug: "wifi-7-enterprise-deployment-grandstream-2026",
+    published: true,
+  },
+  {
     id: "3",
     date: "July 14, 2026",
     title: "China HCI Market Q1 2026: 3.4B RMB as VMware Replacement and Software-Defined Innovation Reshape Enterprise Infrastructure",
