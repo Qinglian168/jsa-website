@@ -264,6 +264,20 @@ export default function WiFi7EnterpriseDeployment2026() {
             In the consumer market, Wi-Fi 7 adoption has been equally swift. According to RUNTO Technology, Wi-Fi 7 products accounted for nearly <strong>30% of router sales</strong> in China in Q1 2026, with entry-level BE3600 models available for under 200 RMB. This rapid consumer adoption is creating pull-through demand in the enterprise segment, as employees expect Wi-Fi 7 performance at the office.
           </p>
 
+          {/* Market Context Image */}
+          <figure className="my-10 rounded-2xl overflow-hidden shadow-xl bg-white border border-gray/10">
+            <img
+              src="/images/news/wifi7-market-office.jpg"
+              alt="Modern enterprise office deploying Wi-Fi 7 access points for high-speed wireless connectivity"
+              className="w-full h-auto"
+              width={1280}
+              height={876}
+            />
+            <figcaption className="text-sm text-gray/60 text-center px-4 py-3 bg-white">
+              Enterprise offices are rapidly upgrading to Wi-Fi 7 to support AI workloads, 4K collaboration, and high-density mobile devices.
+            </figcaption>
+          </figure>
+
           {/* Grandstream WiFi 7 Lineup */}
           <h2 className="text-2xl lg:text-3xl font-bold text-primary mb-4 mt-12">
             Grandstream&apos;s Wi-Fi 7 Access Point Portfolio: Five Models for Every Deployment
@@ -271,6 +285,20 @@ export default function WiFi7EnterpriseDeployment2026() {
           <p className="text-lg leading-relaxed text-gray mb-6">
             Grandstream has rapidly built out a complete Wi-Fi 7 access point portfolio covering indoor SMB, high-density enterprise, and outdoor scenarios. All models are <strong>Wi-Fi CERTIFIED 7</strong> and support the full suite of 802.11be technologies including MLO, 4096-QAM, Multi-RU, and Preamble Puncturing.
           </p>
+
+          {/* Grandstream Product Lineup Image */}
+          <figure className="my-10 rounded-2xl overflow-hidden shadow-xl bg-white border border-gray/10">
+            <img
+              src="/images/news/grandstream-wifi7-product-lineup.jpg"
+              alt="Grandstream Wi-Fi 7 access point portfolio with GWN series features including 6 GHz band, 320 MHz channels, and Multi-Link Operation"
+              className="w-full h-auto"
+              width={1712}
+              height={1282}
+            />
+            <figcaption className="text-sm text-gray/60 text-center px-4 py-3 bg-white">
+              Grandstream&apos;s Wi-Fi 7 access point family delivers enterprise-grade wireless with free cloud management and zero licensing fees.
+            </figcaption>
+          </figure>
 
           {/* Product Cards */}
           <div className="space-y-6 mb-8">
