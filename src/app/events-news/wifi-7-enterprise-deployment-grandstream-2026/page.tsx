@@ -289,7 +289,7 @@ export default function WiFi7EnterpriseDeployment2026() {
           {/* Grandstream Product Lineup Image */}
           <figure className="my-10 rounded-2xl overflow-hidden shadow-xl bg-white border border-gray/10">
             <img
-              src="/images/news/grandstream-wifi7-product-lineup.jpg"
+              src="/images/news/grandstream-wifi7-product-lineup.png"
               alt="Grandstream Wi-Fi 7 access point portfolio with GWN series features including 6 GHz band, 320 MHz channels, and Multi-Link Operation"
               className="w-full h-auto"
               width={1712}
