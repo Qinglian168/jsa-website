@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "5",
+    date: "July 31, 2026",
+    title: "AI Server Market 2026: Dell PowerEdge XE9680 Leads as Global Revenue Hits $122.6B with NVIDIA Blackwell and Liquid Cooling Revolution",
+    excerpt: "IDC reports $122.6B global server market in Q1 2026 (+30.4% YoY). Dell claims #1 with 244.1% growth. NVIDIA Blackwell GB200, mandatory liquid cooling, and sovereign AI reshape enterprise infrastructure. JSA Solution supplies Dell PowerEdge AI servers and GPU-accelerated platforms.",
+    slug: "ai-server-market-2026-dell-nvidia-liquid-cooling",
+    published: true,
+  },
+  {
     id: "4",
     date: "July 18, 2026",
     title: "Wi-Fi 7 Enterprise Deployment 2026: Grandstream GWN Series Delivers 21Gbps Wireless as Market Hits $2.7 Billion",
