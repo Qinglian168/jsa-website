@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/11iaf1xibplhh.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap","style"]
 :HL["/images/news/ai-server-datacenter-hero.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"events-news","param":null,"prefetchHints":0,"slots":{"children":{"name":"ai-server-market-2026-dell-nvidia-liquid-cooling","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"cnzODdfuuugw9TqCtS4uq"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"events-news","param":null,"prefetchHints":0,"slots":{"children":{"name":"ai-server-market-2026-dell-nvidia-liquid-cooling","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"bwM2gSB__vciDGd9dly3b"}
