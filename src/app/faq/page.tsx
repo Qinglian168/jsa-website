@@ -85,8 +85,8 @@ export default function FAQPage() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }} />
-        {/* Blue overlay for text readability */}
-        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(0,51,102,0.72), rgba(0,30,70,0.60))"}} />
+        {/* Blue overlay — lighter so photo elements remain visible (参考图风格) */}
+        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(4,30,100,0.40), rgba(2,15,60,0.25))"}} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="text-sm text-white/60 mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
