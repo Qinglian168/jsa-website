@@ -60,8 +60,8 @@ export default function ContactClient() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }} />
-        {/* Blue overlay — lighter so photo elements remain visible (参考图风格) */}
-        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(4,30,100,0.40), rgba(2,15,60,0.25))"}} />
+        {/* Left-dark gradient: text readable on left, background elements visible on right */}
+        <div className="absolute inset-0" style={{background: "linear-gradient(90deg, rgba(2,10,40,0.78) 0%, rgba(2,10,40,0.45) 35%, rgba(2,10,40,0.10) 70%, rgba(2,10,40,0.05) 100%)"}} />
         <div className="absolute inset-0 dot-pattern opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="text-sm text-white/60 mb-4">
