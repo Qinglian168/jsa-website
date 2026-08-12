@@ -53,7 +53,15 @@ export default function ContactClient() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-primary via-primary-dark to-deepblue text-white">
+      <section className="relative py-16 lg:py-20 overflow-hidden text-white">
+        {/* Background photo */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: "url('/images/contact-hero-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }} />
+        {/* Blue overlay for text readability */}
+        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(0,51,102,0.72), rgba(0,30,70,0.60))"}} />
         <div className="absolute inset-0 dot-pattern opacity-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="text-sm text-white/60 mb-4">
