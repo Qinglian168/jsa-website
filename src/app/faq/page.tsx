@@ -78,8 +78,16 @@ export default function FAQPage() {
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-primary-dark via-primary to-blue-600 text-white py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative text-white py-16 lg:py-20 overflow-hidden">
+        {/* Background photo */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: "url('/images/faq-hero-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }} />
+        {/* Blue overlay for text readability */}
+        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(0,51,102,0.72), rgba(0,30,70,0.60))"}} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="text-sm text-white/60 mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
             <span className="mx-2">/</span>
