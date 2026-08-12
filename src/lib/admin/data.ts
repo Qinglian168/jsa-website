@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "6",
+    date: "August 12, 2026",
+    title: "Smart Meeting Tablets 2026: Horion and MAXHUB Redefine AI-Powered Collaboration as Global IFPD Market Reaches $7.4 Billion",
+    excerpt: "Global IFPD market hits $7.44B in 2026 (9.07% CAGR). Horion M6A Pro V2 brings 72MP four-camera AI with Google EDLA; MAXHUB V7 flagship features QD-Mini LED with Lingxiao AI model. Agentic AI, spatial audio, and meeting equity reshape hybrid work. JSA Solution supplies Horion and MAXHUB smart meeting tablets.",
+    slug: "smart-meeting-tablets-2026-horion-maxhub-ai-collaboration",
+    published: true,
+  },
+  {
     id: "5",
     date: "July 31, 2026",
     title: "AI Server Market 2026: Dell PowerEdge XE9680 Leads as Global Revenue Hits $122.6B with NVIDIA Blackwell and Liquid Cooling Revolution",
