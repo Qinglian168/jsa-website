@@ -69,23 +69,22 @@ export default function SolutionsPage() {
   return (
     <>
       <section className="relative py-16 lg:py-20 overflow-hidden">
-        {/* Background image with tech elements */}
+        {/* Real photo background, blurred and brightened to light-blue tone */}
         <div className="absolute inset-0" style={{
-          backgroundImage: "url('/images/solutions-hero-bg.png')",
+          backgroundImage: "url('/images/solutions-hero-bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }} />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(7,11,30,0.60), rgba(13,27,62,0.45))"}} />
-        <div className="absolute inset-0 bg-grid opacity-20" />
+        {/* Light overlay for text readability */}
+        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(232,244,253,0.82), rgba(240,248,255,0.60))"}} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <nav className="text-sm text-white/40 mb-4">
-            <Link href="/" className="hover:text-cyan">Home</Link>
+          <nav className="text-sm text-slate-500 mb-4">
+            <Link href="/" className="hover:text-blue-700">Home</Link>
             <span className="mx-2">/</span>
-            <span className="text-cyan">Solutions</span>
+            <span className="text-blue-700 font-medium">Solutions</span>
           </nav>
-          <h1 className="text-3xl lg:text-5xl font-extrabold mb-4 text-white">Industry Solutions</h1>
-          <p className="text-lg text-white/50 max-w-2xl">
+          <h1 className="text-3xl lg:text-5xl font-extrabold mb-4 text-slate-900">Industry Solutions</h1>
+          <p className="text-lg text-slate-600 max-w-2xl">
             Not just products — we deliver complete, tailored solutions backed by 17 years of expertise and 50+ brand partnerships.
           </p>
         </div>
