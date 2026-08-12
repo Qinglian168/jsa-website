@@ -21,7 +21,7 @@ const solutions = [
     icon: "🏢",
     desc: "End-to-end wired and wireless enterprise networking solutions. Core switching, routing, SD-WAN, and campus LAN design.",
     features: ["Core/Distribution/Access design", "SD-WAN deployment", "Multi-site connectivity", "Network security integration"],
-    gradient: "from-blue-500 to-blue-700",
+    banner: "/images/solutions/solution-networking-banner.jpg",
   },
   {
     title: "Firewall and Security",
@@ -29,7 +29,7 @@ const solutions = [
     icon: "🔒",
     desc: "Comprehensive network security solutions with next-gen firewalls, intrusion prevention, and zero-trust architecture.",
     features: ["NGFW deployment", "VPN & remote access", "Intrusion prevention", "Security auditing"],
-    gradient: "from-rose-500 to-red-700",
+    banner: "/images/solutions/solution-security-banner.jpg",
   },
   {
     title: "Fiber Access",
@@ -37,7 +37,7 @@ const solutions = [
     icon: "🔦",
     desc: "GPON/EPON fiber access solutions for FTTH, FTTB, and broadband service providers. OLT, ONU, and fiber infrastructure.",
     features: ["GPON/EPON deployment", "FTTH solutions", "Fiber infrastructure", "Broadband access"],
-    gradient: "from-fuchsia-500 to-pink-700",
+    banner: "/images/solutions/solution-fiber-banner.jpg",
   },
   {
     title: "Data Center Networking",
@@ -45,7 +45,7 @@ const solutions = [
     icon: "🖥️",
     desc: "High-performance data center switching, spine-leaf architecture, and software-defined networking for modern DCs.",
     features: ["Spine-leaf architecture", "25G/100G/400G switching", "Software-defined networking", "DC interconnect"],
-    gradient: "from-indigo-500 to-purple-700",
+    banner: "/images/solutions/solution-datacenter-banner.jpg",
   },
   {
     title: "AI Computing and Cloud",
@@ -53,7 +53,7 @@ const solutions = [
     icon: "⚡",
     desc: "GPU cluster design, AI server procurement, and cloud-ready infrastructure for machine learning and HPC workloads.",
     features: ["GPU cluster design", "AI server deployment", "High-speed storage", "HPC infrastructure"],
-    gradient: "from-amber-500 to-orange-700",
+    banner: "/images/solutions/solution-aicomputing-banner.jpg",
   },
   {
     title: "Network Infrastructure",
@@ -61,7 +61,7 @@ const solutions = [
     icon: "🌐",
     desc: "Structured cabling, rack & cabinet solutions, power distribution, and physical infrastructure for enterprise networks.",
     features: ["Structured cabling", "Rack & cabinet design", "Power & cooling", "Cable management"],
-    gradient: "from-cyan-500 to-teal-700",
+    banner: "/images/solutions/solution-infrastructure-banner.jpg",
   },
 ];
 
@@ -99,10 +99,20 @@ export default function SolutionsPage() {
                 href={sol.href}
                 className="group card-tech rounded-2xl overflow-hidden flex flex-col"
               >
-                <div className={`bg-gradient-to-r ${sol.gradient} p-6 text-white`}>
-                  <span className="text-3xl">{sol.icon}</span>
-                  <h2 className="text-xl font-bold mt-2">{sol.title}</h2>
-                  <p className="text-white/70 mt-2 text-sm leading-relaxed">{sol.desc}</p>
+                <div className="relative p-6 text-white overflow-hidden">
+                  {/* Banner background */}
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `url('${sol.banner}')`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }} />
+                  {/* Dark overlay for text readability */}
+                  <div className="absolute inset-0" style={{background: "linear-gradient(160deg, rgba(7,11,30,0.72), rgba(13,27,62,0.38))"}} />
+                  <div className="relative z-10">
+                    <span className="text-3xl">{sol.icon}</span>
+                    <h2 className="text-xl font-bold mt-2">{sol.title}</h2>
+                    <p className="text-white/80 mt-2 text-sm leading-relaxed">{sol.desc}</p>
+                  </div>
                 </div>
                 <div className="p-6 flex-1">
                   <ul className="space-y-2">
