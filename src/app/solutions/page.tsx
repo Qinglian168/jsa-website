@@ -68,8 +68,16 @@ const solutions = [
 export default function SolutionsPage() {
   return (
     <>
-      <section className="relative py-16 lg:py-20 overflow-hidden" style={{background: "linear-gradient(135deg, #070b1e, #0d1b3e)"}}>
-        <div className="absolute inset-0 bg-grid opacity-30" />
+      <section className="relative py-16 lg:py-20 overflow-hidden">
+        {/* Background image with tech elements */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: "url('/images/solutions-hero-bg.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }} />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(7,11,30,0.60), rgba(13,27,62,0.45))"}} />
+        <div className="absolute inset-0 bg-grid opacity-20" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="text-sm text-white/40 mb-4">
             <Link href="/" className="hover:text-cyan">Home</Link>
