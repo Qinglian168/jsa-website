@@ -68,23 +68,25 @@ const solutions = [
 export default function SolutionsPage() {
   return (
     <>
-      <section className="relative py-16 lg:py-20 overflow-hidden">
-        {/* Real photo background, blurred and brightened to light-blue tone */}
+      <section className="relative py-16 lg:py-20 overflow-hidden text-white">
+        {/* Real photo background — network ports with blue/grey cables, lightly blurred */}
         <div className="absolute inset-0" style={{
           backgroundImage: "url('/images/solutions-hero-bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }} />
-        {/* Light overlay for text readability */}
-        <div className="absolute inset-0" style={{background: "linear-gradient(135deg, rgba(232,244,253,0.82), rgba(240,248,255,0.60))"}} />
+        {/* Left-dark gradient overlay so photo elements stay visible on right */}
+        <div className="absolute inset-0" style={{
+          background: "linear-gradient(90deg, rgba(4,30,90,0.72) 0%, rgba(4,30,90,0.45) 50%, rgba(4,30,90,0.15) 100%)"
+        }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <nav className="text-sm text-slate-500 mb-4">
-            <Link href="/" className="hover:text-blue-700">Home</Link>
+          <nav className="text-sm text-white/70 mb-4">
+            <Link href="/" className="hover:text-white">Home</Link>
             <span className="mx-2">/</span>
-            <span className="text-blue-700 font-medium">Solutions</span>
+            <span className="text-white font-medium">Solutions</span>
           </nav>
-          <h1 className="text-3xl lg:text-5xl font-extrabold mb-4 text-slate-900">Industry Solutions</h1>
-          <p className="text-lg text-slate-600 max-w-2xl">
+          <h1 className="text-3xl lg:text-5xl font-extrabold mb-4">Industry Solutions</h1>
+          <p className="text-lg text-white/80 max-w-2xl">
             Not just products — we deliver complete, tailored solutions backed by 17 years of expertise and 50+ brand partnerships.
           </p>
         </div>
