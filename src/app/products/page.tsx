@@ -69,16 +69,25 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-primary via-primary-dark to-deepblue text-white">
-        <div className="absolute inset-0 dot-pattern opacity-10" />
+      <section className="relative py-16 lg:py-20 overflow-hidden text-white">
+        {/* Real photo background — data center / server racks, subtle blur + blue tint */}
+        <div className="absolute inset-0" style={{
+          backgroundImage: "url('/images/products-hero-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }} />
+        {/* Left-dark gradient overlay for text readability on right side */}
+        <div className="absolute inset-0" style={{
+          background: "linear-gradient(90deg, rgba(4,40,120,0.78) 0%, rgba(4,40,120,0.55) 45%, rgba(4,40,120,0.20) 100%)"
+        }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <nav className="text-sm text-white/60 mb-4">
+          <nav className="text-sm text-white/70 mb-4">
             <Link href="/" className="hover:text-white">Home</Link>
             <span className="mx-2">/</span>
             <span className="text-white">Products</span>
           </nav>
           <h1 className="text-3xl lg:text-5xl font-extrabold mb-4">Product Categories</h1>
-          <p className="text-lg text-white/70 max-w-2xl">
+          <p className="text-lg text-white/80 max-w-2xl">
             Explore our 6 core product categories from 50+ world-class brands — Networking, AI Workstations, Smart Conference, Optical Transceivers, Fiber Optic Cables, and Testers & Tools.
           </p>
         </div>
