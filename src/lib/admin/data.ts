@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "7",
+    date: "August 28, 2026",
+    title: "Professional Audio & Video Solutions 2026: Jabra PanaCast 55 VBS, Evolve3, and AI Room Kits as Enterprise Video Conferencing Market Reaches $10.7 Billion",
+    excerpt: "Enterprise video conferencing market hits $10.69B in 2026 (12.1% CAGR). Jabra PanaCast 55 VBS with scalable Room Kits launches at ISE 2026; Evolve3 75/85 headsets debut; PanaCast 40/50 VBS deliver 180-degree 4K AI video bars. Meeting equity, beamforming audio, and AI room analytics reshape hybrid work. JSA Solution supplies Jabra professional AV solutions.",
+    slug: "professional-audio-video-solutions-2026-jabra-panacast-evolve3",
+    published: true,
+  },
+  {
     id: "6",
     date: "August 12, 2026",
     title: "Smart Meeting Tablets 2026: Horion and MAXHUB Redefine AI-Powered Collaboration as Global IFPD Market Reaches $7.4 Billion",
