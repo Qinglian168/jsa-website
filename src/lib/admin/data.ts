@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "8",
+    date: "September 11, 2026",
+    title: "All-Optical Wi-Fi 7 Campus Network 2026: Ruijie, H3C, Huawei & ZTE 10G F5G-A Deployments Reshape the $12.2B Global Campus Network Market",
+    excerpt: "Campus network market hits $12.21B in 2026 (10.5% CAGR). Ruijie all-optical + Wi-Fi 7 at Northeastern University Qinhuangdao (14,000 students, 60,000 devices). Huawei F5G-A at Fuyang Normal (12.5 Gbit/s per room), H3C at Ma'anshan (1,846 Wi-Fi 7 APs), ZTE 50G-PON at Southeast University (10 Gbps, 0.1ms). RG-AP6981 outdoor, RG-AP1920-X iF Design Award, EDN 2.0 explained.",
+    slug: "ruijie-all-optical-wifi7-campus-network-2026",
+    published: true,
+  },
+  {
     id: "7",
     date: "August 28, 2026",
     title: "Professional Audio & Video Solutions 2026: Jabra PanaCast 55 VBS, Evolve3, and AI Room Kits as Enterprise Video Conferencing Market Reaches $10.7 Billion",
