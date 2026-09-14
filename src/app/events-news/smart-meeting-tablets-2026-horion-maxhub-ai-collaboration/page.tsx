@@ -232,7 +232,7 @@ export default function SmartMeetingTablets2026() {
             Horion: Eight Years at the Summit with AI Four-Camera Innovation
           </h2>
           <p className="text-lg leading-relaxed text-gray mb-4">
-            <strong>Horion</strong> (皓丽), backed by parent company Kofa Tech&apos;s (康冠科技) 30+ years of display manufacturing expertise, has held the #1 sales position on major e-commerce platforms for eight consecutive years (2018&ndash;2026). The brand has expanded to <strong>110 countries and regions</strong> since launching its overseas strategy in 2019, and made a prominent appearance at ISE 2026 in Barcelona.
+            <strong>Horion</strong>, backed by parent company Kofa Tech&apos;s 30+ years of display manufacturing expertise, has held the #1 sales position on major e-commerce platforms for eight consecutive years (2018&ndash;2026). The brand has expanded to <strong>110 countries and regions</strong> since launching its overseas strategy in 2019, and made a prominent appearance at ISE 2026 in Barcelona.
           </p>
           <p className="text-lg leading-relaxed text-gray mb-6">
             The flagship <strong>Horion M6A Pro V2</strong> represents the cutting edge of AI meeting tablet technology. Its four-camera architecture combines a <strong>72-megapixel ultra-wide main camera</strong> with a 4K telephoto trio, powered by Sony large-sensor sensors and VCS biomimetic eye technology. Google EDLA certification ensures seamless enterprise deployment, while Auto Framing, presenter tracking, and gallery mode adapt dynamically to meeting scenarios.
@@ -278,7 +278,7 @@ export default function SmartMeetingTablets2026() {
             MAXHUB: Nine Years of Market Leadership with QD-Mini LED Flagship
           </h2>
           <p className="text-lg leading-relaxed text-gray mb-4">
-            <strong>MAXHUB</strong>, a brand under CVTE (视源股份, holding ~21% global IFPD market share), pioneered China&apos;s interactive smart meeting tablet category in 2017 and has maintained the <strong>#1 market share position for nine consecutive years</strong> (2017&ndash;2025). The brand now serves 80+ countries and appeared at the 2026 BRICS New Industrial Revolution Exhibition as a representative of Chinese intelligent manufacturing.
+            <strong>MAXHUB</strong>, a brand under CVTE (holding ~21% global IFPD market share), pioneered China&apos;s interactive smart meeting tablet category in 2017 and has maintained the <strong>#1 market share position for nine consecutive years</strong> (2017&ndash;2025). The brand now serves 80+ countries and appeared at the 2026 BRICS New Industrial Revolution Exhibition as a representative of Chinese intelligent manufacturing.
           </p>
           <p className="text-lg leading-relaxed text-gray mb-6">
             The <strong>MAXHUB V7 series</strong> represents the most comprehensive product matrix in the industry, spanning five tiers from standard to flagship. Each tier targets a specific enterprise scenario, from small huddle rooms to executive boardrooms.
@@ -332,7 +332,7 @@ export default function SmartMeetingTablets2026() {
           <p className="text-sm text-gray/60 italic mb-6">Source: MAXHUB V7 series product specifications, 2026</p>
 
           <p className="text-lg leading-relaxed text-gray mb-4">
-            The <strong>MAXHUB V7 Flagship</strong> stands apart with its <strong>QD-Mini LED panel</strong>, upgrading from traditional surface light sources to pixel-level point sources, achieving a staggering <strong>2,000,000:1 contrast ratio</strong>, 100% NTSC color gamut, and Delta E &lt; 1 color accuracy. An integrated flip-camera design with commercial encryption provides dual privacy protection. The proprietary <strong>Lingxiao AI meeting model</strong> (领效智会大模型) automates the entire meeting lifecycle: pre-meeting calendar synchronization, in-meeting real-time transcription and multilingual translation, and post-meeting structured minutes with automatic action item extraction.
+            The <strong>MAXHUB V7 Flagship</strong> stands apart with its <strong>QD-Mini LED panel</strong>, upgrading from traditional surface light sources to pixel-level point sources, achieving a staggering <strong>2,000,000:1 contrast ratio</strong>, 100% NTSC color gamut, and Delta E &lt; 1 color accuracy. An integrated flip-camera design with commercial encryption provides dual privacy protection. The proprietary <strong>Lingxiao AI meeting model</strong> automates the entire meeting lifecycle: pre-meeting calendar synchronization, in-meeting real-time transcription and multilingual translation, and post-meeting structured minutes with automatic action item extraction.
           </p>
           <p className="text-lg leading-relaxed text-gray">
             MAXHUB&apos;s ecosystem extends beyond meeting tablets. The company offers Microsoft Teams Rooms certified solutions, the XBoard V7 series for boardrooms, education-focused U4 series (deployed in Vietnam, Malaysia, and Australia), LED all-in-one systems for large venues, and even industrial robotics (X7 inspection quadruped and A3 flexible robotic arm). This breadth positions MAXHUB as a full-stack intelligent collaboration platform rather than a single-product vendor.
