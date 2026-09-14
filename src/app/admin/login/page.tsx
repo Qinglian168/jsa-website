@@ -10,18 +10,18 @@ export default function AdminLoginPage() {
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
     setLoading(true);
 
-    setTimeout(() => {
-      const success = login(password);
-      if (!success) {
-        setError("密码错误，请重试");
-      }
-      setLoading(false);
-    }, 300);
+    const result = await login(password);
+
+    if (!result.success) {
+      setError(result.error || "密码错误，请重试");
+      setPassword("");
+    }
+    setLoading(false);
   };
 
   return (
@@ -57,7 +57,8 @@ export default function AdminLoginPage() {
               required
             />
             <p className="text-xs text-gray mt-2">
-              默认密码：jsa2026（可通过环境变量 NEXT_PUBLIC_ADMIN_PASSWORD 修改）
+              登录后 8 小时有效，关闭浏览器即自动退出。管理员需通过环境变量
+              NEXT_PUBLIC_ADMIN_PASSWORD_HASH 维护密码哈希。
             </p>
           </div>
 

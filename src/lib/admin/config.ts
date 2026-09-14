@@ -1,4 +1,6 @@
-export const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "jsa2026";
+// NOTE: credentials intentionally live in lib/admin/auth.ts, never here.
+// The password is stored as a salted SHA-256 hash supplied through
+// NEXT_PUBLIC_ADMIN_PASSWORD_HASH — see scripts/set-admin-password.mjs.
 
 export const SITE_INFO = {
   name: "深圳市捷思安科技有限公司",

@@ -9,11 +9,54 @@ interface SolutionPageProps {
   approach: { title: string; desc: string }[];
   products: { category: string; items: string[] }[];
   benefits: string[];
+  faqs?: { q: string; a: string }[];
+  slug?: string;
 }
 
-export function SolutionPage({ title, icon, description, color, challenges, approach, products, benefits }: SolutionPageProps) {
+export function SolutionPage({ title, icon, description, color, challenges, approach, products, benefits, faqs, slug }: SolutionPageProps) {
+  const faqSchema =
+    faqs && faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
+  const serviceSchema = slug
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: `${title} Solution`,
+        description,
+        provider: {
+          "@type": "Organization",
+          name: "JSA Solution",
+          url: "https://jsasolution.com",
+        },
+        areaServed: "Worldwide",
+        url: `https://jsasolution.com/solutions/${slug}`,
+      }
+    : null;
+
   return (
     <>
+      {serviceSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        />
+      )}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       {/* Hero */}
       <section className={`bg-gradient-to-br ${color} text-white py-16 lg:py-20`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -103,6 +146,30 @@ export function SolutionPage({ title, icon, description, color, challenges, appr
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      {faqs && faqs.length > 0 && (
+        <section className="py-16 lg:py-20 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl lg:text-3xl font-extrabold text-dark mb-8">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((f, i) => (
+                <details key={i} className="group border border-border rounded-xl p-5 open:bg-light">
+                  <summary className="font-bold text-dark cursor-pointer list-none flex items-start justify-between gap-4">
+                    <span>{f.q}</span>
+                    <span className="text-primary text-xl leading-none shrink-0 group-open:rotate-45 transition-transform">
+                      +
+                    </span>
+                  </summary>
+                  <p className="text-sm text-gray leading-relaxed mt-3">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="py-12 bg-gradient-to-br from-primary via-primary-dark to-deepblue text-white">

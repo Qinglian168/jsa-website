@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "set-admin-password": "node scripts/set-admin-password.mjs"
   },
   "dependencies": {
     "@notionhq/client": "^5.22.0",
