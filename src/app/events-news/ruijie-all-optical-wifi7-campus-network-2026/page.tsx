@@ -669,7 +669,7 @@ export default function RuijieAllOpticalCampus2026() {
             RG-AP9751-R is the AP of choice for lecture halls, library
             reading rooms, and stadium concourses — the same high-density
             scenario that drives Ruijie&apos;s &quot;Bedrock Wireless&quot;
-            (磐石无线) solution architecture.
+            solution architecture.
           </p>
 
           <h3 className="mt-8 text-2xl font-semibold text-slate-900">
