@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "enterprise IT distributor Shenzhen",
     "JSA Solution infrastructure",
     "full-stack HCI platform",
-    "VMware to国产替代",
+    "domestic technology substitution",
     "Inspur HCI InCloudRail",
     "Lenovo ThinkAgile HCI",
     "software-defined data center",
@@ -124,7 +124,7 @@ export default function ChinaHCIMarket2026Q1() {
               </div>
             </div>
             <p className="text-gray leading-relaxed">
-              The market is shaped by what IDC describes as a <strong>&ldquo;dual transformation period&rdquo;</strong> &mdash; the simultaneous impact of VMware replacement demand and hardware price inflation. These forces have made <strong>large-scale deployment capability, full-stack technical competence, and software-hardware协同 cost reduction</strong> the three defining criteria that separate leading vendors from the rest of the field.
+              The market is shaped by what IDC describes as a <strong>&ldquo;dual transformation period&rdquo;</strong> &mdash; the simultaneous impact of VMware replacement demand and hardware price inflation. These forces have made <strong>large-scale deployment capability, full-stack technical competence, and software-hardware co-optimized cost reduction</strong> the three defining criteria that separate leading vendors from the rest of the field.
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function ChinaHCIMarket2026Q1() {
               Top 5 HCI Vendors: Sangfor, Huawei, H3C, Inspur, Lenovo
             </h2>
             <p className="text-gray leading-relaxed mb-4">
-              The competitive landscape is clear. In the overall HCI market, <strong>Sangfor (深信服)</strong> leads with approximately 19.2% market share (6.5 billion RMB revenue), followed by <strong>Huawei (华为)</strong> at 5.3 billion, <strong>H3C (新华三)</strong> at 5 billion, <strong>Inspur (浪潮)</strong> at 4.9 billion, and <strong>Lenovo (联想)</strong> at 2.4 billion. In the full-stack HCI segment &mdash; which integrates platform-layer services on top of traditional HCI architecture &mdash; the ranking shifts slightly, with Sangfor, Inspur, H3C, Huawei, and Lenovo comprising the top five.
+              The competitive landscape is clear. In the overall HCI market, <strong>Sangfor</strong> leads with approximately 19.2% market share (6.5 billion RMB revenue), followed by <strong>Huawei</strong> at 5.3 billion, <strong>H3C</strong> at 5 billion, <strong>Inspur</strong> at 4.9 billion, and <strong>Lenovo</strong> at 2.4 billion. In the full-stack HCI segment &mdash; which integrates platform-layer services on top of traditional HCI architecture &mdash; the ranking shifts slightly, with Sangfor, Inspur, H3C, Huawei, and Lenovo comprising the top five.
             </p>
             <div className="bg-white rounded-xl border border-border p-6 mb-6">
               <h3 className="font-bold text-dark mb-4">Q1 2026 HCI Market Rankings:</h3>
@@ -188,7 +188,7 @@ export default function ChinaHCIMarket2026Q1() {
               <strong>Sangfor</strong> has established itself as the undisputed leader in VMware replacement, having completed migrations for over <strong>12,000 enterprise customers</strong> across 20+ countries. Its deployments span 600+ central and state-owned enterprises, 600+ financial institutions, and 900+ Class III hospitals. The company has migrated over <strong>110,000 CPU cores</strong> of virtualization architecture, demonstrating proven capability in large-scale, cross-architecture migrations.
             </p>
             <p className="text-gray leading-relaxed">
-              <strong>Huawei&apos;s FusionCube</strong> leverages the company&apos;s Kunpeng + Ascend ecosystem for deep hardware-software integration, making it the preferred choice for large-scale government and financial projects requiring Xinchuang (信创) compliance. <strong>H3C&apos;s UIS platform</strong> offers comprehensive full-stack ICT capabilities with strong adoption in government, telecom, and finance sectors.
+              <strong>Huawei&apos;s FusionCube</strong> leverages the company&apos;s Kunpeng + Ascend ecosystem for deep hardware-software integration, making it the preferred choice for large-scale government and financial projects requiring Xinchuang compliance. <strong>H3C&apos;s UIS platform</strong> offers comprehensive full-stack ICT capabilities with strong adoption in government, telecom, and finance sectors.
             </p>
           </div>
 
@@ -210,7 +210,7 @@ export default function ChinaHCIMarket2026Q1() {
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-orange-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                  <span><strong>Xinchuang (信创) compliance mandate</strong> &mdash; Government, finance, and critical infrastructure sectors face accelerating domestic technology replacement deadlines, favoring native Chinese HCI platforms</span>
+                  <span><strong>Xinchuang compliance mandate</strong> &mdash; Government, finance, and critical infrastructure sectors face accelerating domestic technology replacement deadlines, favoring native Chinese HCI platforms</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-orange-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
@@ -249,7 +249,7 @@ export default function ChinaHCIMarket2026Q1() {
               <h3 className="font-bold text-dark mb-4">Two Key Software-Defined Cost Optimization Strategies:</h3>
               <div className="space-y-6">
                 <div className="bg-cyan-50 rounded-lg p-5">
-                  <h4 className="font-bold text-cyan-700 mb-2 text-lg">1. Resource Reuse (资源利旧)</h4>
+                  <h4 className="font-bold text-cyan-700 mb-2 text-lg">1. Resource Reuse of Existing Hardware</h4>
                   <p className="text-sm text-gray leading-relaxed mb-3">
                     A end-to-end process: <strong>inventory assessment &rarr; idle resource identification &rarr; legacy hardware refurbishment &rarr; cluster deployment</strong>. Enterprises can deploy new business workloads on existing hardware without large-scale new purchases.
                   </p>
@@ -260,7 +260,7 @@ export default function ChinaHCIMarket2026Q1() {
                   </div>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-5">
-                  <h4 className="font-bold text-blue-700 mb-2 text-lg">2. Memory Tiering Technology (内存分层技术)</h4>
+                  <h4 className="font-bold text-blue-700 mb-2 text-lg">2. Memory Tiering Technology</h4>
                   <p className="text-sm text-gray leading-relaxed mb-3">
                     Sangfor&apos;s innovative <strong>multi-level memory pool + intelligent scheduling engine</strong> uses NVMe SSD to expand memory capacity. Under the same performance guarantees, this technology delivers <strong>2x effective memory capacity</strong> from the same physical RAM.
                   </p>
@@ -419,7 +419,7 @@ export default function ChinaHCIMarket2026Q1() {
                   Why are Chinese enterprises replacing VMware in 2026?
                   <svg className="w-5 h-5 text-gray group-open:rotate-180 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
                 </summary>
-                <p className="mt-3 text-gray leading-relaxed">Broadcom&apos;s acquisition of VMware ended perpetual licensing, causing subscription costs to increase 3-5x for many enterprise customers. Additionally, Chinese government, finance, and critical infrastructure sectors face accelerating Xinchuang (信创) compliance mandates requiring domestic technology adoption. These two forces combined have created what IDC describes as a &ldquo;dual transformation period,&rdquo; driving tens of thousands of enterprises to migrate from VMware to domestic HCI platforms like Sangfor, Huawei FusionCube, and H3C UIS.</p>
+                <p className="mt-3 text-gray leading-relaxed">Broadcom&apos;s acquisition of VMware ended perpetual licensing, causing subscription costs to increase 3-5x for many enterprise customers. Additionally, Chinese government, finance, and critical infrastructure sectors face accelerating Xinchuang compliance mandates requiring domestic technology adoption. These two forces combined have created what IDC describes as a &ldquo;dual transformation period,&rdquo; driving tens of thousands of enterprises to migrate from VMware to domestic HCI platforms like Sangfor, Huawei FusionCube, and H3C UIS.</p>
               </details>
               <details className="bg-white rounded-xl border border-border p-5 group">
                 <summary className="font-semibold text-dark cursor-pointer list-none flex justify-between items-center">
