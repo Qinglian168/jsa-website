@@ -60,15 +60,15 @@ export async function fetchNewsFromNotion(): Promise<NewsItem[]> {
 }
 
 export function getNotionSetupInstructions(): string {
-  return `1. 访问 https://www.notion.so/my-integrations 创建 Integration
-2. 复制 Token，设置为环境变量 NOTION_TOKEN
-3. 在 Notion 中创建一个数据库，包含以下字段：
+  return `1. Go to https://www.notion.so/my-integrations and create an Integration
+2. Copy the token and set it as the NOTION_TOKEN environment variable
+3. Create a database in Notion with the following fields:
    - Title (title)
    - Excerpt (rich text)
    - Slug (rich text)
    - Date (date)
    - Published (checkbox)
-4. 将数据库分享给 Integration
-5. 复制数据库 ID，设置为环境变量 NOTION_NEWS_DATABASE_ID
-6. 重新构建网站即可自动从 Notion 读取新闻`;
+4. Share the database with the Integration
+5. Copy the database ID and set it as the NOTION_NEWS_DATABASE_ID environment variable
+6. Rebuild the site to load news from Notion automatically`;
 }
