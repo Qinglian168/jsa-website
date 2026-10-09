@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "9",
+    date: "October 9, 2026",
+    title: "Warehouse & Factory Wi-Fi Coverage 2026: Anti-Interference RF Design and High-Density AP Planning for AGV, AMR and Scanner Fleets",
+    excerpt: "A 2026 engineering guide to warehouse wireless: the industrial WLAN market reaches $6.8B (9.4% CAGR) as AMR logistics hits $11.48B. How to beat co-channel and non-Wi-Fi interference, size cells around steel racking (5-7 dB to 20 dB loss), deploy directional aisle antennas, hold 20 MHz channels, and stop AGV roaming loss. Huawei AirEngine 6776-26HD zero roaming, Ruijie RG-APD4930, H3C WA7220CE, Cisco 9178, Aruba AP-735, Ruckus BeamFlex compared.",
+    slug: "warehouse-factory-wifi-coverage-interference-2026",
+    published: true,
+  },
+  {
     id: "8",
     date: "September 11, 2026",
     title: "All-Optical Wi-Fi 7 Campus Network 2026: Ruijie, H3C, Huawei & ZTE 10G F5G-A Deployments Reshape the $12.2B Global Campus Network Market",
