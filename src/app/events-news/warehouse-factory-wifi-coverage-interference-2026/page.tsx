@@ -358,6 +358,32 @@ export default function WarehouseWifiCoverage2026() {
               device needed.
             </li>
           </ul>
+
+          {/* Figure 1 */}
+          <figure className="mt-10">
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm">
+              <img
+                src="/images/news/warehouse-factory-wifi-coverage-2026-hero.png"
+                alt="Warehouse Wi-Fi coverage design: ceiling-mounted access points with directional beams over high-bay pallet racking, with an AGV and forklift in the aisle"
+                width={1536}
+                height={1024}
+                loading="lazy"
+                className="h-auto w-full object-cover"
+              />
+            </div>
+            <figcaption className="mt-3 text-sm leading-relaxed text-slate-500">
+              <strong className="font-semibold text-slate-700">
+                Figure 1 — The warehouse RF environment as it actually is:
+              </strong>{" "}
+              high-bay racking turns each aisle into a corridor that guides RF
+              energy lengthwise while steel uprights and stacked pallets block
+              it across rows. Ceiling APs must be dropped to roughly 22 ft and
+              downtilted on purpose, and every passing forklift or AGV rewrites
+              the multipath picture. Coverage-first heatmaps hide all of this —
+              cell-level airtime design does not.
+            </figcaption>
+          </figure>
+
           <p className="mt-6 text-lg leading-relaxed">
             The consequence is a single design rule that separates working
             warehouse networks from failing ones:{" "}
