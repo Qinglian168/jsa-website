@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "10",
+    date: "October 23, 2026",
+    title: "AI Factory Networking, a 14-Day AI Factory, and a Compressed Security Patch Cycle: October 2026 Enterprise ICT Briefing",
+    excerpt: "Cisco's OCP 2026 Silicon One G302 with 1.6T optics and USFP 400G-per-lane pluggables co-developed with NVIDIA, NVIDIA's DSX POD cutting AI factory deployment from six months to 14 days, Fortinet's coordinated October patch wave and the FortiBleed campaign across 86,644 firewalls in 194 countries, and Ubiquiti's UniFi Industrial switches and IP67 U7 Industrial AP - with procurement guidance for Europe, the USA, Southeast Asia and Africa.",
+    slug: "ai-factory-networking-ict-briefing-october-2026",
+    published: true,
+  },
+  {
     id: "9",
     date: "October 9, 2026",
     title: "Warehouse & Factory Wi-Fi Coverage 2026: Anti-Interference RF Design and High-Density AP Planning for AGV, AMR and Scanner Fleets",
