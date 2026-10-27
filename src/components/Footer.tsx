@@ -12,12 +12,12 @@ const brands = [
 const productLinks = [
   { href: "/products/router", label: "Routers" },
   { href: "/products/switch", label: "Switches" },
-  { href: "/products/firewall", label: "Firewalls" },
+  { href: "/products/networking/firewalls", label: "Firewalls" },
   { href: "/products/wireless-ap", label: "Wireless" },
   { href: "/products/ai-workstation", label: "AI Workstation" },
-  { href: "/products/unified-communications", label: "Unified Comms" },
+  { href: "/products/networking/unified-communications", label: "Unified Comms" },
   { href: "/products/ai-server", label: "Servers" },
-  { href: "/products/storage", label: "Storages" },
+  { href: "/products/networking/servers-storages", label: "Storages" },
 ];
 
 const solutionLinks = [
