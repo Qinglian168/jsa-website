@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "11",
+    date: "October 30, 2026",
+    title: "A Critical Week for Unified Communications Security, GPU Supply and SMB Wi-Fi 7: October 30, 2026 Enterprise ICT Briefing",
+    excerpt: "Cisco's October advisory wave led by a 9.8-rated Expressway RCE (CVE-2026-76466) and a critical Unified Communications hardening release, NVIDIA's supply chain capacity expansion ahead of Vera Rubin general availability in November, Grandstream's first tri-band Wi-Fi 7 router (GWN7072) and Ruckus One's AI-driven network operations release - with regional procurement guidance for Europe, the USA, Germany, the UK, Malaysia, Indonesia, Nigeria, Kenya and South Africa.",
+    slug: "cisco-patch-wave-nvidia-supply-chain-ict-briefing-2026",
+    published: true,
+  },
+  {
     id: "10",
     date: "October 23, 2026",
     title: "AI Factory Networking, a 14-Day AI Factory, and a Compressed Security Patch Cycle: October 2026 Enterprise ICT Briefing",
