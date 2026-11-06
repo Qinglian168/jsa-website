@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "12",
+    date: "November 6, 2026",
+    title: "Vera Rubin Goes GA, a Kernel CVE Triggers a Firewall and Router Patch Wave, and UC Endpoints Refresh: November 6, 2026 Enterprise ICT Briefing",
+    excerpt: "NVIDIA Vera Rubin NVL72 reaches general availability on Google Cloud with claims of 10x lower inference cost per token and 30x agentic throughput per dollar, CVE-2026-98432 (CVSS 9.8) drives parallel patch waves at Fortinet (FG-IR-26-188) and MikroTik (RouterOS 7.25.1), Grandstream launches the GRP2600 Lite IP phone series with WireGuard VPN and AI noise reduction, Cisco ends sale of Wireless IP Phone 8821 accessories, and Ubiquiti pushes PoE to 800 metres while launching UniFi Cloud Storage - with procurement guidance for Europe, the USA, Germany, the UK, Malaysia, Indonesia, Nigeria, Kenya and South Africa.",
+    slug: "vera-rubin-ga-kernel-cve-patch-wave-november-2026-ict-briefing",
+    published: true,
+  },
+  {
     id: "11",
     date: "October 30, 2026",
     title: "A Critical Week for Unified Communications Security, GPU Supply and SMB Wi-Fi 7: October 30, 2026 Enterprise ICT Briefing",
