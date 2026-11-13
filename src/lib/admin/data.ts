@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "13",
+    date: "November 13, 2026",
+    title: "Frontier AI Finds the Bugs, Wi-Fi 7 Goes Post-Quantum, and Memory Sets the Price: November 13, 2026 Enterprise ICT Briefing",
+    excerpt: "Fortinet publishes a 12-fix November PSIRT wave led by a 9.3-rated FortiOS OSPF bypass (CVE-2026-126253) with most criticals found using frontier AI, Cisco extends over-the-air post-quantum cryptography to Wi-Fi 7 access points and bundles ThousandEyes assurance into every new AP, NVIDIA argues HBM efficiency - not capacity - sets AI server economics with up to 30x per-dollar agentic throughput on Vera Rubin NVL72, and HPE doubles networking supply purchase commitments ahead of a multi-year Wi-Fi 7 campus refresh - with procurement guidance for Europe, the USA, Germany, the UK, Malaysia, Indonesia, Nigeria, Kenya and South Africa.",
+    slug: "fortinet-patch-wave-pqc-wifi7-november-2026-ict-briefing",
+    published: true,
+  },
+  {
     id: "12",
     date: "November 6, 2026",
     title: "Vera Rubin Goes GA, a Kernel CVE Triggers a Firewall and Router Patch Wave, and UC Endpoints Refresh: November 6, 2026 Enterprise ICT Briefing",
