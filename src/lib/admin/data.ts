@@ -2,6 +2,14 @@ import type { NewsItem, SiteSettings, ProductCategory } from "./types";
 
 export const INITIAL_NEWS: NewsItem[] = [
   {
+    id: "14",
+    date: "November 20, 2026",
+    title: "45-Week GPU Lead Times, Quadrupled DRAM, and a $390 Billion Supply Bet: November 20, 2026 Enterprise ICT Briefing",
+    excerpt: "NVIDIA raises supply and capacity commitments from $279B to $390B for multi-year memory procurement while guiding gross margin down three points to 71-72%, TrendForce measures 30-45 week GPU, 19-week server DRAM and 50-week HDD lead times as Q3 DRAM revenue climbs 369% year on year on just 4% bit-shipment growth, Cisco posts 43% networking growth and doubles FY2027 AI infrastructure revenue expectations to $9B alongside Multicloud Fabric Controlled Availability, Fortinet puts AI prompt and token-cost inspection on the Equinix Distributed AI Hub while leaving FortiOS 7.0 and 6.4 without a fix for CVE-2026-121528, and Malaysia attaches a 30% local content requirement to a RM385.7 billion data centre pipeline - with procurement guidance for Europe, the USA, Germany, the UK, Malaysia, Indonesia, Nigeria, Kenya and South Africa.",
+    slug: "gpu-lead-times-dram-pricing-ai-infrastructure-supply-2026",
+    published: true,
+  },
+  {
     id: "13",
     date: "November 13, 2026",
     title: "Frontier AI Finds the Bugs, Wi-Fi 7 Goes Post-Quantum, and Memory Sets the Price: November 13, 2026 Enterprise ICT Briefing",
